@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Чепак](https://up.htmlacademy.ru/adaptive/19/user/1050801).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Пермяков](https://htmlacademy.ru/profile/id773389).
 
 ---
 
