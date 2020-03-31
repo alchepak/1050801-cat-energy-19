@@ -29,8 +29,68 @@
       </nav>
     </header>
 
-    <main>
+    <main class="inner-page">
+      <h1 class="inner-page__title section-title">Подбор программы</h1>
+      <p class="inner-page__info">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
+      <form class="program-form form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="program-form__group inputs-group">
+          <legend class="visually-hidden">Основные данные кота</legend>
+
+          <label class="inputs-group__item">
+            Имя:*
+            <input class="form__input" type="text" name="catName" placeholder="Барсик" required>
+          </label>
+
+          <label class="inputs-group__item">
+            Вес (кг):*
+            <input class="form__input" type="number" name="catWeight" placeholder="7" required>
+          </label>
+
+          <label class="inputs-group__item">
+            Возраст (лет):
+            <input class="form__input" type="number" name="catAge" placeholder="7">
+          </label>
+        </fieldset>
+
+        <fieldset class="program-form__group inputs-group">
+          <legend class="visually-hidden">Название программы</legend>
+
+          <ul class="inputs-group__item choicelist">
+            <li class="choicelist__item">
+              <input class="visually-hidden" type="radio" name="programName" id="slimming-input" value="slimming" checked>
+              <label class="choicelist__label" for="slimming-input">Похудение</label>
+            </li>
+
+            <li class="choicelist__item">
+              <input class="visually-hidden" type="radio" name="programName" id="mass-gain-input" value="mass-gain">
+              <label class="choicelist__label" for="mass-gain-input">Набор массы</label>
+            </li>
+
+            <li class="choicelist__item">
+              <input class="visually-hidden" type="radio" name="programName" id="need-advice-input" value="need-advice">
+              <label class="choicelist__label" for="need-advice-input">Не знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="program-form__group inputs-group">
+          <legend class="inputs-group__title group-title">Контактные данные (владельца кота)</legend>
+
+          <label class="inputs-group__item">
+            E-mail:*
+            <input class="form__input" type="email" name="clientMail" placeholder="kuklachev@gmail.com" required>
+          </label>
+
+          <label class="inputs-group__item">
+            Телефон:*
+            <input class="form__input" type="tel" name="clientPhone" placeholder="8 (960) 900-60-90" required>
+          </label>
+        </fieldset>
+
+        <button class="program-form__submit button button--primary" type="submit">Отправить заявку</button>
+        <p class="program-form__note">*&nbsp;&mdash;&nbsp;Обязательные поля</p>
+      </form>
     </main>
 
     <footer class="page-footer">
