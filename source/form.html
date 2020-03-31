@@ -88,6 +88,41 @@
           </label>
         </fieldset>
 
+        <fieldset class="program-form__group inputs-group">
+          <legend class="inputs-group__title group-title"></legend>Комментарий</legend>
+
+          <label class="inputs-group__item">
+            <span class="visually-hidden">Поле для комментария</span>
+            <textarea class="form__textarea" name="requestComment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset class="program-form__group inputs-group">
+          <legend class="inputs-group__title group-title"></legend>Дополнительно</legend>
+
+          <ul class="inputs-group__item choicelist">
+            <li class="choicelist__item">
+              <input class="visually-hidden" type="checkbox" name="isSweetener" id="sweetener-input" checked>
+              <label class="choicelist__label" for="sweetener-input">Сахарозаменитель</label>
+            </li>
+
+            <li class="choicelist__item">
+              <input class="visually-hidden" type="checkbox" name="isDrinking" id="drinking-input">
+              <label class="choicelist__label" for="drinking-input">Питьевая вода</label>
+            </li>
+
+            <li class="choicelist__item">
+              <input class="visually-hidden" type="checkbox" name="isMilk" id="milk-input">
+              <label class="choicelist__label" for="milk-input">Молоко</label>
+            </li>
+
+            <li class="choicelist__item">
+              <input class="visually-hidden" type="checkbox" name="isVitamins" id="vitamins-input">
+              <label class="choicelist__label" for="vitamins-input">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+
         <button class="program-form__submit button button--primary" type="submit">Отправить заявку</button>
         <p class="program-form__note">*&nbsp;&mdash;&nbsp;Обязательные поля</p>
       </form>
