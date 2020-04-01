@@ -56,22 +56,23 @@
         <fieldset class="program-form__group inputs-group">
           <legend class="visually-hidden">Название программы</legend>
 
-          <ul class="inputs-group__item choicelist">
-            <li class="choicelist__item">
-              <input class="visually-hidden" type="radio" name="programName" id="slimming-input" value="slimming" checked>
-              <label class="choicelist__label" for="slimming-input">Похудение</label>
-            </li>
+          <label class="inputs-group__item choice">
+            Похудение
+            <input class="visually-hidden" type="radio" name="programName" value="slimming" checked>
+            <span class="choice__radio"></span>
+          </label>
 
-            <li class="choicelist__item">
-              <input class="visually-hidden" type="radio" name="programName" id="mass-gain-input" value="mass-gain">
-              <label class="choicelist__label" for="mass-gain-input">Набор массы</label>
-            </li>
+          <label class="inputs-group__item choice">
+            Набор массы
+            <input class="visually-hidden" type="radio" name="programName" value="mass-gain">
+            <span class="choice__radio"></span>
+          </label>
 
-            <li class="choicelist__item">
-              <input class="visually-hidden" type="radio" name="programName" id="need-advice-input" value="need-advice">
-              <label class="choicelist__label" for="need-advice-input">Не знаю (нужен ваш совет)</label>
-            </li>
-          </ul>
+          <label class="inputs-group__item choice">
+            Не знаю (нужен ваш совет)
+            <input class="visually-hidden" type="radio" name="programName" value="need-advice">
+            <span class="choice__radio"></span>
+          </label>
         </fieldset>
 
         <fieldset class="program-form__group inputs-group">
