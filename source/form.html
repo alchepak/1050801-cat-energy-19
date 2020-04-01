@@ -101,27 +101,29 @@
         <fieldset class="program-form__group inputs-group">
           <legend class="inputs-group__title group-title">Дополнительно</legend>
 
-          <ul class="inputs-group__item choicelist">
-            <li class="choicelist__item">
-              <input class="visually-hidden" type="checkbox" name="isSweetener" id="sweetener-input" checked>
-              <label class="choicelist__label" for="sweetener-input">Сахарозаменитель</label>
-            </li>
+          <label class="inputs-group__item choice">
+            Сахарозаменитель
+            <input class="visually-hidden" type="checkbox" name="isSweetener" checked>
+            <span class="choice__checkbox"></span>
+          </label>
 
-            <li class="choicelist__item">
-              <input class="visually-hidden" type="checkbox" name="isDrinking" id="drinking-input">
-              <label class="choicelist__label" for="drinking-input">Питьевая вода</label>
-            </li>
+          <label class="inputs-group__item choice">
+            Питьевая вода
+            <input class="visually-hidden" type="checkbox" name="isDrinking">
+            <span class="choice__checkbox"></span>
+          </label>
 
-            <li class="choicelist__item">
-              <input class="visually-hidden" type="checkbox" name="isMilk" id="milk-input">
-              <label class="choicelist__label" for="milk-input">Молоко</label>
-            </li>
+          <label class="inputs-group__item choice">
+            Молоко
+            <input class="visually-hidden" type="checkbox" name="isMilk">
+            <span class="choice__checkbox"></span>
+          </label>
 
-            <li class="choicelist__item">
-              <input class="visually-hidden" type="checkbox" name="isVitamins" id="vitamins-input">
-              <label class="choicelist__label" for="vitamins-input">Витамины</label>
-            </li>
-          </ul>
+          <label class="inputs-group__item choice">
+            Витамины
+            <input class="visually-hidden" type="checkbox" name="isVitamins">
+            <span class="choice__checkbox"></span>
+          </label>
         </fieldset>
 
         <button class="program-form__submit button button--primary" type="submit">Отправить заявку</button>
