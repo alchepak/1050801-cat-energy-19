@@ -29,11 +29,123 @@
       </nav>
     </header>
 
-    <main>
+    <main class="inner-page">
+      <h1 class="inner-page__title section-title">Подбор программы</h1>
+      <p class="inner-page__info">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
+      <form class="program-form form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="program-form__group inputs-group">
+          <legend class="visually-hidden">Основные данные кота</legend>
+
+          <label class="inputs-group__item">
+            Имя:*
+            <input class="form__input" type="text" name="catName" placeholder="Барсик" required>
+          </label>
+
+          <label class="inputs-group__item">
+            Вес (кг):*
+            <input class="form__input" type="number" name="catWeight" placeholder="7" required>
+          </label>
+
+          <label class="inputs-group__item">
+            Возраст (лет):
+            <input class="form__input" type="number" name="catAge" placeholder="7">
+          </label>
+        </fieldset>
+
+        <fieldset class="program-form__group inputs-group">
+          <legend class="visually-hidden">Название программы</legend>
+
+          <label class="inputs-group__item choice">
+            <input class="visually-hidden" type="radio" name="programName" value="slimming" checked>
+            <span class="choice__radio"></span>
+            Похудение
+          </label>
+
+          <label class="inputs-group__item choice">
+            <input class="visually-hidden" type="radio" name="programName" value="mass-gain">
+            <span class="choice__radio"></span>
+            Набор массы
+          </label>
+
+          <label class="inputs-group__item choice">
+            <input class="visually-hidden" type="radio" name="programName" value="need-advice">
+            <span class="choice__radio"></span>
+            Не знаю (нужен ваш совет)
+          </label>
+        </fieldset>
+
+        <fieldset class="program-form__group inputs-group">
+          <legend class="inputs-group__title group-title">Контактные данные (владельца кота)</legend>
+
+          <label class="inputs-group__item">
+            E-mail:*
+            <input class="form__input" type="email" name="clientMail" placeholder="kuklachev@gmail.com" required>
+          </label>
+
+          <label class="inputs-group__item">
+            Телефон:*
+            <input class="form__input" type="tel" name="clientPhone" placeholder="8 (960) 900-60-90" required>
+          </label>
+        </fieldset>
+
+        <fieldset class="program-form__group inputs-group">
+          <legend class="inputs-group__title group-title">Комментарий</legend>
+
+          <label class="inputs-group__item">
+            <span class="visually-hidden">Поле для комментария</span>
+            <textarea class="form__textarea" name="requestComment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset class="program-form__group inputs-group">
+          <legend class="inputs-group__title group-title">Дополнительно</legend>
+
+          <label class="inputs-group__item choice">
+            <input class="visually-hidden" type="checkbox" name="isSweetener" checked>
+            <span class="choice__checkbox"></span>
+            Сахарозаменитель
+          </label>
+
+          <label class="inputs-group__item choice">
+            <input class="visually-hidden" type="checkbox" name="isDrinking">
+            <span class="choice__checkbox"></span>
+            Питьевая вода
+          </label>
+
+          <label class="inputs-group__item choice">
+            <input class="visually-hidden" type="checkbox" name="isMilk">
+            <span class="choice__checkbox"></span>
+            Молоко
+          </label>
+
+          <label class="inputs-group__item choice">
+            <input class="visually-hidden" type="checkbox" name="isVitamins">
+            <span class="choice__checkbox"></span>
+            Витамины
+          </label>
+        </fieldset>
+
+        <button class="program-form__submit button button--primary" type="submit">Отправить заявку</button>
+        <p class="program-form__note">*&nbsp;&mdash;&nbsp;Обязательные поля</p>
+      </form>
     </main>
 
     <footer class="page-footer">
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
+
+        <p class="contacts__tagline">Приглашаем к сотрудничеству дилеров!</p>
+        <address class="contacts__address">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </address>
+
+        <div class="contacts__map map">
+          <img class="map__image" src="https://via.placeholder.com/320x362" alt="Карта с расположением офиса" width="320" height="362">
+          <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1582539542656!5m2!1sru!2sru" width="100%" height="362"></iframe>
+        </div>
+      </section>
+
       <a class="page-footer__logo" href="index.html">
         <img class="page-footer__logo-header logo-cat-energy" src="https://via.placeholder.com/128x24" alt="Cat Energy" width="128" height="24">
       </a>
