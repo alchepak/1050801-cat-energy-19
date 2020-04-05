@@ -1,0 +1,28 @@
+// .product-card {
+
+//   &--small {
+
+//   }
+// }
+
+.product-card__title {
+  @include font(16px, 20px, $oswald, $font-color-head);
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+// .product-card__image {
+
+// }
+
+.product-card__data {
+  @include font(12px, 16px);
+
+  &--extra {
+    font-size: 14px;
+  }
+}
+
+// .product-card__link {
+
+// }
