@@ -1,0 +1,50 @@
+.category {
+  background-color: $grey-back;
+}
+
+.category__title {
+  @include font(24px, 37px, $oswald, $font-color-head);
+  font-weight: normal;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    background-color: $green;
+  }
+
+  &::after {
+    content: "";
+
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--icon-slim::after {
+    background-image: url("../../img/icon-cat-slim.svg");
+  }
+
+  &--icon-pro::after {
+    background-image: url("../../img/icon-cat-pro.svg");
+  }
+}
+
+// .category__info {
+
+// }
+
+.category__link {
+  @include font(16px, 16px, $oswald, $font-color-head);
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+  }
+}
