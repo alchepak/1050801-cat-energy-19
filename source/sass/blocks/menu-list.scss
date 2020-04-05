@@ -1,0 +1,17 @@
+.menu-list {
+  list-style: none;
+}
+
+.menu-list__item {
+  text-align: center;
+}
+
+.menu-list__link {
+  @include font(20px, 20px, $oswald, $font-color-head);
+  text-transform: uppercase;
+
+  &--active::after {
+    content: "";
+    background-color: $green;
+  }
+}
