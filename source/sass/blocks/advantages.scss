@@ -7,7 +7,7 @@
 // }
 
 .advantages__list {
-  list-style: none;
+  @include list-reset;
 }
 
 .advantages__item {

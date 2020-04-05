@@ -3,7 +3,7 @@
 // }
 
 .catalog__list {
-  list-style: none;
+  @include list-reset;
 }
 
 // .catalog__item {
