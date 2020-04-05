@@ -1,0 +1,9 @@
+.section-title {
+  @include font(36px, 60px, $oswald, $font-color-head);
+  font-weight: normal;
+
+  &--promo {
+    color: #ffffff;
+    line-height: 36px;
+  }
+}
