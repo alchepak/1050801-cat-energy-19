@@ -1,3 +1,25 @@
-body {
-  background: red;
-}
+@import "../../node_modules/normalize.css/normalize";
+@import "fonts.scss";
+@import "variables.scss";
+@import "common.scss";
+@import "mixins.scss";
+@import "blocks/advantages.scss";
+@import "blocks/button.scss";
+@import "blocks/catalog-more.scss";
+@import "blocks/catalog.scss";
+@import "blocks/categories.scss";
+@import "blocks/category.scss";
+@import "blocks/contacts.scss";
+@import "blocks/inner-page.scss";
+@import "blocks/logo-cat-energy.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/map.scss";
+@import "blocks/menu-list.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/product-card.scss";
+@import "blocks/promo-section.scss";
+@import "blocks/section-title.scss";
+@import "blocks/social-list.scss";
+@import "blocks/text-paragraph.scss";
+@import "blocks/visually-hidden.scss";
