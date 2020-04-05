@@ -1,0 +1,26 @@
+.promo-section {
+  background-color: #63a73a;
+  background-image:
+    url("../img/index-background-mobile@1x.jpg"),
+    linear-gradient(#63a73a 0, #63a73a 305px, #ffffff 305px, #ffffff 100%);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.promo-section__title {
+  text-align: center;
+}
+
+.promo-section__tagline {
+  @include font(14px, 14px, $oswald, #ffffff);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+// .promo-section__product {
+
+// }
+
+// .promo-section__button {
+
+// }

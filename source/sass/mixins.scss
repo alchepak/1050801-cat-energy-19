@@ -1,0 +1,13 @@
+@mixin font($size, $height, $font-name: $arial, $color: $font-color-text) {
+  color: $color;
+  font-family: $font-name;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

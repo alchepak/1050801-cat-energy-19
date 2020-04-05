@@ -1,0 +1,36 @@
+.button {
+  border: none;
+
+  @include font(16px, 20px, $oswald, #ffffff);
+  text-transform: uppercase;
+
+  background-color: $green;
+
+  &:hover,
+  &:focus {
+    background-color: $green-darken;
+  }
+
+  &:active {
+    background-color: $green-darken;
+  }
+
+  &--promo {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &--additional {
+    color: $font-color-text;
+    background-color: $grey-back;
+  }
+
+  &--additional:hover,
+  &--additional:focus {
+    background-color: $grey-back-darken;
+  }
+
+  &--additional:active {
+    background-color: $grey-back-darken;
+  }
+}

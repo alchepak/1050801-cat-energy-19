@@ -1,0 +1,23 @@
+// .page-header {
+// }
+
+// .page-header__logo {
+// }
+
+// .page-header__logo-image {
+// }
+
+// .page-header__logo-text {
+// }
+.page-header__toggle {
+  border: none;
+
+  background-color: transparent;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--open {
+    background-image: url("../img/icon-close.svg");
+  }
+}
