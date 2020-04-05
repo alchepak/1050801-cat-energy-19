@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -13,7 +14,9 @@
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
 
         <ul class="main-nav__list menu-list">
           <li class="menu-list__item">
@@ -60,7 +63,7 @@
                 </tbody>
               </table>
 
-              <a class="product-card__link button button--primary" href="order.html">Заказать</a>
+              <a class="product-card__link button" href="order.html">Заказать</a>
             </article>
           </li>
 
@@ -88,7 +91,7 @@
                 </tbody>
               </table>
 
-              <a class="product-card__link button button--primary" href="order.html">Заказать</a>
+              <a class="product-card__link button" href="order.html">Заказать</a>
             </article>
           </li>
 
@@ -116,7 +119,7 @@
                 </tbody>
               </table>
 
-              <a class="product-card__link button button--primary" href="order.html">Заказать</a>
+              <a class="product-card__link button" href="order.html">Заказать</a>
             </article>
           </li>
 
@@ -144,7 +147,7 @@
                 </tbody>
               </table>
 
-              <a class="product-card__link button button--primary" href="order.html">Заказать</a>
+              <a class="product-card__link button" href="order.html">Заказать</a>
             </article>
           </li>
 
@@ -172,7 +175,7 @@
                 </tbody>
               </table>
 
-              <a class="product-card__link button button--primary" href="order.html">Заказать</a>
+              <a class="product-card__link button" href="order.html">Заказать</a>
             </article>
           </li>
 
@@ -200,7 +203,7 @@
                 </tbody>
               </table>
 
-              <a class="product-card__link button button--primary" href="order.html">Заказать</a>
+              <a class="product-card__link button" href="order.html">Заказать</a>
             </article>
           </li>
 
@@ -228,7 +231,7 @@
                 </tbody>
               </table>
 
-              <a class="product-card__link button button--primary" href="order.html">Заказать</a>
+              <a class="product-card__link button" href="order.html">Заказать</a>
             </article>
           </li>
 
@@ -248,7 +251,7 @@
             <article class="product-card product-card--small">
               <h3 class="product-card__title">Сахарозаменитель</h3>
 
-              <table class="product-card__data">
+              <table class="product-card__data product-card__data--extra">
                 <tbody>
                   <tr>
                     <td>1 упаковка (100 г)</td>
@@ -257,7 +260,7 @@
                 </tbody>
               </table>
 
-              <a class="product-card__link button button--primary" href="order.html">Заказать</a>
+              <a class="product-card__link button" href="order.html">Заказать</a>
             </article>
           </li>
 
@@ -265,7 +268,7 @@
             <article class="product-card product-card--small">
               <h3 class="product-card__title">Питьевая вода</h3>
 
-              <table class="product-card__data">
+              <table class="product-card__data product-card__data--extra">
                 <tbody>
                   <tr>
                     <td>5 литров</td>
@@ -274,7 +277,7 @@
                 </tbody>
               </table>
 
-              <a class="product-card__link button button--primary" href="order.html">Заказать</a>
+              <a class="product-card__link button" href="order.html">Заказать</a>
             </article>
           </li>
 
@@ -282,7 +285,7 @@
             <article class="product-card product-card--small">
               <h3 class="product-card__title">Молоко</h3>
 
-              <table class="product-card__data">
+              <table class="product-card__data product-card__data--extra">
                 <tbody>
                   <tr>
                     <td>1 литр</td>
@@ -291,7 +294,7 @@
                 </tbody>
               </table>
 
-              <a class="product-card__link button button--primary" href="order.html">Заказать</a>
+              <a class="product-card__link button" href="order.html">Заказать</a>
             </article>
           </li>
 
@@ -299,7 +302,7 @@
             <article class="product-card product-card--small">
               <h3 class="product-card__title">Витамины</h3>
 
-              <table class="product-card__data">
+              <table class="product-card__data product-card__data--extra">
                 <tbody>
                   <tr>
                     <td>1 упаковка (30 г)</td>
@@ -308,7 +311,7 @@
                 </tbody>
               </table>
 
-              <a class="product-card__link button button--primary" href="order.html">Заказать</a>
+              <a class="product-card__link button" href="order.html">Заказать</a>
             </article>
           </li>
         </ul>
@@ -319,11 +322,11 @@
     </main>
 
     <footer class="page-footer">
-      <section class="contacts">
+      <section class="contacts contacts--inner">
         <h2 class="visually-hidden">Наши контакты</h2>
 
         <p class="contacts__tagline">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">
+        <address class="contacts__address text-paragraph">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </address>
 
