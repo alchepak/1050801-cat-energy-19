@@ -1,0 +1,12 @@
+// .form {
+
+// }
+.form__input {
+  @include font(16px, 18px, $oswald);
+  text-transform: uppercase;
+}
+
+.form__textarea {
+  @include font(16px, 18px, $oswald);
+  text-transform: uppercase;
+}
