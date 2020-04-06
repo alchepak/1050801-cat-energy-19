@@ -1,0 +1,14 @@
+// .options {
+
+// }
+
+.options__key {
+  @include font(24px, 24px, $oswald, $font-color-head);
+  text-transform: uppercase;
+}
+
+.options__value {
+  @include font(12px, 12px);
+
+  background-color: $grey-back;
+}
