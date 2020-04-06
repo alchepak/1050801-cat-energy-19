@@ -1,0 +1,24 @@
+.cat-example {
+  background-color: $grey-back;
+}
+
+// .cat-example__title {
+
+// }
+
+// .cat-example__info {
+
+// }
+
+// .cat-example__options {
+
+// }
+
+.cat-example__price {
+  @include font(14px, 20px, $oswald, $font-color-head);
+  text-transform: uppercase;
+}
+
+// .cat-example__slider {
+
+// }
