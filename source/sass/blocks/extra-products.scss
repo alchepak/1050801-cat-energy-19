@@ -1,0 +1,31 @@
+// .extra-products {
+
+// }
+
+// .extra-products__title {
+
+// }
+
+.extra-products__list {
+  @include list-reset;
+}
+
+// .extra-products__item {
+
+// }
+
+.extra-products__promo {
+  @include font(16px, 20px, $color: #ffffff);
+  text-align: center;
+
+  background-color: $green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &::before {
+    background-image: url("../img/icon-gift.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

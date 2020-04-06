@@ -1,0 +1,39 @@
+// .changer {
+
+// }
+
+// .changer__item {
+
+//   &--before {
+
+//   }
+
+//   &--after {
+
+//   }
+// }
+
+.changer__control {
+  border: none;
+
+  @include font(16px, 20px, $oswald, $font-color-head);
+  text-transform: uppercase;
+
+  background-color: transparent;
+
+  // &--before {
+
+  // }
+
+  // &--after {
+
+  // }
+}
+
+.changer__line {
+  background-color: #ffffff;
+}
+
+.changer__switch {
+  background-color: $green;
+}

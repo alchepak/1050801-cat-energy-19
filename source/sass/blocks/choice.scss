@@ -1,0 +1,17 @@
+// .choice {
+
+// }
+
+.choice__radio {
+  &::before {
+    content: "";
+    background-color: $green;
+  }
+}
+
+.choice__checkbox {
+  &::before {
+    content: "";
+    background-image: url("../img/icon-tick.svg");
+  }
+}
