@@ -1,0 +1,8 @@
+.group-title {
+  @include font(24px, 24px, $oswald, $font-color-head);
+  font-weight: normal;
+
+  &::after {
+    background-color: $green;
+  }
+}
