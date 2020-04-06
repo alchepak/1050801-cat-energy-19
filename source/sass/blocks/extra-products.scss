@@ -7,7 +7,7 @@
 // }
 
 .extra-products__list {
-  list-style: none;
+  @include list-reset;
 }
 
 // .extra-products__item {
