@@ -2,6 +2,26 @@
 
 // }
 
-// .categories__item {
+.categories__item {
+  min-height: 266px;
+}
 
-// }
+@media (min-width: $tablet-width) {
+  .categories__item {
+    min-height: 372px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories {
+    display: flex;
+  }
+
+  .categories__item {
+    width: 50%;
+  }
+
+  .categories__item:nth-of-type(2n+1) {
+    margin-right: 40px;
+  }
+}
