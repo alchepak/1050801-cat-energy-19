@@ -2,16 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <header class="page-header">
-      <div class="container">
+    <header class="page-header container">
+      <div class="page-header__top">
         <a class="page-header__logo">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/33x38" alt="Логотип интернет-магазина" width="33" height="38">
-          <img class="page-header__logo-text logo-cat-energy" src="https://via.placeholder.com/101x18" alt="Cat Energy" width="101" height="18">
+          <img src="https://via.placeholder.com/33x38" alt="Логотип интернет-магазина" width="33" height="38">
+        </a>
+
+        <a class="page-header__logo-text">
+          <img class="logo-cat-energy" src="https://via.placeholder.com/101x18" alt="Cat Energy" width="101" height="18">
         </a>
 
         <button class="page-header__toggle" type="button">
@@ -37,11 +41,13 @@
     <main>
       <h1 class="visually-hidden">Интернет-магазин фитнес еды для котиков "Cat Energy"</h1>
 
-      <section class="promo-section container">
-        <h2 class="promo-section__title section-title section-title--promo">Функциональное питание для котов</h2>
-        <p class="promo-section__tagline">Занялся собой? Займись котом!</p>
-        <img class="promo-section__product" src="https://via.placeholder.com/280x270" alt="Корм Cat Energy Pro со вкусом курицы" width="280" height="270">
-        <a class="promo-section__button button button--promo " href="form.html">Подобрать программу</a>
+      <section class="promo-section">
+        <div class="container">
+          <h2 class="promo-section__title section-title section-title--promo">Функциональное питание для котов</h2>
+          <p class="promo-section__tagline">Занялся собой? Займись котом!</p>
+          <img class="promo-section__product" src="https://via.placeholder.com/280x270" alt="Корм Cat Energy Pro со вкусом курицы" width="280" height="270">
+          <a class="promo-section__button button button--promo " href="form.html">Подобрать программу</a>
+        </div>
       </section>
 
       <section class="categories container">
