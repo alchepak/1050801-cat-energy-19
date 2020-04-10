@@ -26,7 +26,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
+  .page-header__container {
     display: flex;
     justify-content: space-between;
   }
@@ -41,5 +41,12 @@
 
   .page-header__toggle {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    position: absolute;
+    width: 100%;
   }
 }

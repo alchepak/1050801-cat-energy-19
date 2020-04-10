@@ -1,4 +1,6 @@
 .promo-section {
+  text-align: center;
+
   background-color: #63a73a;
   background-image:
     url("../img/index-background-mobile@1x.jpg"),
@@ -7,13 +9,12 @@
   background-repeat: no-repeat;
 }
 
-.promo-section__title {
-  text-align: center;
-}
+// .promo-section__title {
+
+// }
 
 .promo-section__tagline {
   @include font(14px, 14px, $oswald, #ffffff);
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -24,3 +25,39 @@
 // .promo-section__button {
 
 // }
+
+@media (min-width: $tablet-width) {
+  .promo-section {
+    min-height: 868px;
+    padding-top: 67px;
+
+    text-align: left;
+
+    background-color: #ffffff;
+    background-image: none;
+  }
+
+  .promo-section__container {
+    padding-left: 120px;
+  }
+
+  .promo-section__title {
+    width: 430px;
+  }
+
+  .promo-section__tagline {
+    width: 430px;
+    color: $font-color-head;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-section {
+    min-height: 696px;
+    padding-top: 142px;
+  }
+
+  .promo-section__container {
+    padding-left: 190px;
+  }
+}
