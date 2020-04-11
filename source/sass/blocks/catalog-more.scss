@@ -1,4 +1,7 @@
 .catalog-more {
+  display: flex;
+  flex-direction: column;
+
   text-align: center;
 }
 
@@ -23,3 +26,20 @@
 // .catalog-more__link {
 
 // }
+
+@media (min-width: $tablet-width) {
+  .catalog-more {
+    width: 324px;
+    min-height: 431px;
+    padding-left: 38px;
+    padding-right: 38px;
+
+    border: 1px solid #cdcdcd;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-more {
+    width: 245px;
+  }
+}
