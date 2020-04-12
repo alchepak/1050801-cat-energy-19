@@ -2,46 +2,54 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <header class="page-header">
-      <div class="container">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/33x38" alt="Логотип интернет-магазина" width="33" height="38">
-          <img class="page-header__logo-text logo-cat-energy" src="https://via.placeholder.com/101x18" alt="Cat Energy" width="101" height="18">
-        </a>
+    <header class="page-header page-header--main">
+      <div class="page-header__container container">
+        <div class="page-header__top">
+          <a class="page-header__logo">
+            <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина" width="33" height="38">
+          </a>
 
-        <button class="page-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+          <a class="page-header__logo-text">
+            <img class="logo-cat-energy" src="img/logo-cat-energy.svg" alt="Cat Energy" width="101" height="18">
+          </a>
+
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+
+        <nav class="main-nav">
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item">
+              <a class="menu-list__link menu-list__link--active">Главная</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-
-      <nav class="main-nav">
-        <ul class="main-nav__list menu-list">
-          <li class="menu-list__item">
-            <a class="menu-list__link menu-list__link--active">Главная</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
     <main>
       <h1 class="visually-hidden">Интернет-магазин фитнес еды для котиков "Cat Energy"</h1>
 
-      <section class="promo-section container">
-        <h2 class="promo-section__title section-title section-title--promo">Функциональное питание для котов</h2>
-        <p class="promo-section__tagline">Занялся собой? Займись котом!</p>
-        <img class="promo-section__product" src="https://via.placeholder.com/280x270" alt="Корм Cat Energy Pro со вкусом курицы" width="280" height="270">
-        <a class="promo-section__button button button--promo " href="form.html">Подобрать программу</a>
+      <section class="promo-section">
+        <div class="promo-section__container container">
+          <h2 class="promo-section__title section-title section-title--promo">Функциональное питание для котов</h2>
+          <p class="promo-section__tagline">Занялся собой? Займись котом!</p>
+          <img class="promo-section__product" src="img/index-can-mobile@1x.png" alt="Корм Cat Energy Pro со вкусом курицы" width="280" height="270">
+          <a class="promo-section__button button button--promo " href="form.html">Подобрать программу</a>
+        </div>
       </section>
 
       <section class="categories container">
@@ -94,8 +102,8 @@
         </div>
 
         <div class="cat-example__slider changer">
-          <img class="changer__item changer__item--before" src="https://via.placeholder.com/311x232" alt="Кот Борис 2 месяца назад. Он такой большой, что не в силах поднять себя" width="311" height="232">
-          <img class="changer__item changer__item--after" src="https://via.placeholder.com/251x240" alt="Кот Борис, который сбросил 5 кг за 2 месяца" width="251" height="240">
+          <img class="changer__item changer__item--before" src="img/before-mobile@1x.png" alt="Кот Борис 2 месяца назад. Он такой большой, что не в силах поднять себя" width="311" height="232">
+          <img class="changer__item changer__item--after" src="img/after-mobile@1x.png" alt="Кот Борис, который сбросил 5 кг за 2 месяца" width="251" height="240">
 
           <div class="changer__actions">
             <button class="changer__control changer__control--before">Было</button>
@@ -114,7 +122,7 @@
     </main>
 
     <footer class="page-footer">
-      <section class="contacts">
+      <section class="contacts contacts--main">
         <h2 class="visually-hidden">Наши контакты</h2>
 
         <div class="container">
@@ -125,14 +133,14 @@
         </div>
 
         <div class="contacts__map map">
-          <img class="map__image" src="https://via.placeholder.com/320x362" alt="Карта с расположением офиса" width="320" height="362">
+          <img class="map__image" src="img/bg-map-mobile@1x.png" alt="Карта с расположением офиса" width="320" height="362">
           <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1582539542656!5m2!1sru!2sru" width="100%" height="362"></iframe>
         </div>
       </section>
 
-      <div class="container">
+      <div class="page-footer__info container">
         <a class="page-footer__logo">
-          <img class="page-footer__logo-header logo-cat-energy" src="https://via.placeholder.com/128x24" alt="Cat Energy" width="128" height="24">
+          <img class="page-footer__logo-header logo-cat-energy" src="img/logo-cat-energy.svg" alt="Cat Energy" width="128" height="24">
         </a>
 
         <ul class="page-footer__social social-list">

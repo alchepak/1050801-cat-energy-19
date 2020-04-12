@@ -7,3 +7,11 @@
     line-height: 36px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .section-title {
+    &--promo {
+      color: $font-color-head;
+    }
+  }
+}

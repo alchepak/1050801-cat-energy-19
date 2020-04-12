@@ -1,10 +1,13 @@
 // .page-header {
 // }
+.page-header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 65px;
+}
 
 // .page-header__logo {
-// }
-
-// .page-header__logo-image {
 // }
 
 // .page-header__logo-text {
@@ -19,5 +22,31 @@
 
   &--open {
     background-image: url("../img/icon-close.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__top {
+    min-height: auto;
+  }
+
+  .page-header__logo-text {
+    display: none;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header--main {
+    position: absolute;
+    width: 100%;
   }
 }

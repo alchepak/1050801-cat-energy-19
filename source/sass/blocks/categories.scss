@@ -2,6 +2,24 @@
 
 // }
 
-// .categories__item {
+.categories__item {
+  min-height: 266px;
+}
 
-// }
+@media (min-width: $tablet-width) {
+  .categories__item {
+    min-height: 372px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .categories__item {
+    width: calc(50% - #{$desktop-indent});
+  }
+}

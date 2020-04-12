@@ -9,3 +9,35 @@
 // .catalog__item {
 
 // }
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-right: -1 * $tablet-indent;
+    margin-left: -1 * $tablet-indent;
+  }
+
+  .catalog__item {
+    margin-top: 58px;
+    margin-right: $tablet-indent;
+    margin-left: $tablet-indent;
+
+    &--more {
+      margin-top: 140px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    margin-right: -1 * $desktop-indent;
+    margin-left: -1 * $desktop-indent;
+  }
+
+  .catalog__item {
+    margin-right: $desktop-indent;
+    margin-left: $desktop-indent;
+  }
+}

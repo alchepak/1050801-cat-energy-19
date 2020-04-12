@@ -1,6 +1,14 @@
-// .page-footer {
+.page-footer {
+  background-color: $grey-back;
+}
 
-// }
+.page-footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 236px;
+}
 
 // .page-footer__logo {
 
@@ -16,4 +24,12 @@
 
 .page-footer__developer {
   @include font(16px, 16px);
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__info {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 150px;
+  }
 }

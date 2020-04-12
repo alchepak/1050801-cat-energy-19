@@ -2,6 +2,7 @@
   border: none;
 
   @include font(16px, 20px, $oswald, #ffffff);
+  text-align: center;
   text-transform: uppercase;
 
   background-color: $green;

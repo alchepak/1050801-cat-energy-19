@@ -1,7 +1,11 @@
 // .main-nav {
-
 // }
 
 // .main-nav__list {
-
 // }
+@media (min-width: $tablet-width) {
+  .main-nav {
+    min-height: auto;
+    margin-left: 0;
+  }
+}
