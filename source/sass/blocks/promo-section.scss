@@ -1,12 +1,17 @@
 .promo-section {
-  text-align: center;
-
   background-color: #63a73a;
   background-image:
     url("../img/index-background-mobile@1x.jpg"),
     linear-gradient(#63a73a 0, #63a73a 305px, #ffffff 305px, #ffffff 100%);
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+.promo-section__container {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
 }
 
 // .promo-section__title {
@@ -38,7 +43,10 @@
   }
 
   .promo-section__container {
+    align-items: flex-start;
     padding-left: 120px;
+
+    text-align: left;
   }
 
   .promo-section__title {
