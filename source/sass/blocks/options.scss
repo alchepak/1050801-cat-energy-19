@@ -1,6 +1,6 @@
-// .options {
-
-// }
+.options {
+  display: flex;
+}
 
 .options__key {
   @include font(24px, 24px, $oswald, $font-color-head);
