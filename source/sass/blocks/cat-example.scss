@@ -19,20 +19,11 @@
   .cat-example {
     position: relative;
 
-    background-color: transparent;
-
-    &::before {
-      content: "";
-
-      position: absolute;
-      bottom: 0;
-      z-index: -1;
-
-      width: 100%;
-      height: 462px;
-
-      background-image: linear-gradient(to right, $grey-back 0, $grey-back 50%, $grey-back-darken 50%, $grey-back-darken 100%);
-    }
+    background-color: #ffffff;
+    background-image: linear-gradient(to right, $grey-back 0, $grey-back 50%, $grey-back-darken 50%, $grey-back-darken 100%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 462px;
   }
 
   .cat-example__data {
