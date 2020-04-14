@@ -1,11 +1,28 @@
 .map {
+  position: relative;
+
+  display: flex;
+  height: 362px;
+
   background-color: #fdf7ef;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
-// .map__image {
+.map__frame {
+  min-height: 100%;
+  border: none;
+}
 
-// }
+@media (min-width: $tablet-width) {
+  .map {
+    height: 396px;
+  }
+}
 
-// .map__frame {
-
-// }
+@media (min-width: $desktop-width) {
+  .map {
+    height: 399px;
+  }
+}

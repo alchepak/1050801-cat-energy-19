@@ -1,15 +1,46 @@
-// .program-form {
+.program-form {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-// }
+.program-form__group {
+  width: 100%;
+}
 
-// .program-form__group {
-
-// }
-
-// .program-form__submit {
-
-// }
+.program-form__submit {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
 .program-form__note {
+  margin: 0;
+
   @include font(14px, 16px);
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .program-form__submit {
+    flex-direction: row;
+  }
+
+  .program-form__button {
+    width: calc(50% - #{$tablet-indent});
+  }
+
+  .program-form__note {
+    margin-left: $tablet-indent * 2;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-form__button {
+    width: calc(50% - #{$desktop-indent});
+  }
+
+  .program-form__note {
+    margin-left: $desktop-indent * 2;
+  }
 }
