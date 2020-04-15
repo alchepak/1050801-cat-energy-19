@@ -1,10 +1,10 @@
-// .main-nav {
-// }
+.main-nav {
+  width: 100%;
+}
 
-// .main-nav__list {
-// }
 @media (min-width: $tablet-width) {
   .main-nav {
+    width: auto;
     min-height: auto;
     margin-left: 0;
   }
