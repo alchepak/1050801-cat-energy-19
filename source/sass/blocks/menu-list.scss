@@ -22,6 +22,8 @@
 @media (min-width: $tablet-width) {
   .menu-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     margin: 0;
   }
 

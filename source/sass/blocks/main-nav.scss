@@ -1,11 +1,13 @@
-.main-nav {
-  width: 100%;
-}
-
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: auto;
+    max-width: 516px;
     min-height: auto;
     margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    max-width: 50%;
   }
 }
