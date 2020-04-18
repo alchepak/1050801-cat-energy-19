@@ -117,11 +117,24 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    position: relative;
     padding-top: 54px;
 
-    &--index {
+    &::before {
+      content: "";
+
       position: absolute;
-      width: 100%;
+      top: 0;
+      right: 0;
+
+      width: 50%;
+      height: 100%;
+
+      background-color: #65a93c;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-position: right top;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 

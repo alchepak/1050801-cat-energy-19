@@ -1,35 +1,31 @@
 .promo-section {
-  background-color: #63a73a;
   background-image:
     url("../img/index-background-mobile@1x.jpg"),
-    linear-gradient(#63a73a 0, #63a73a 305px, #ffffff 305px, #ffffff 100%);
-  background-position: top center;
+    linear-gradient(to right, #65a93c 0, #65a93c 50%, #63a73a 50%, #63a73a 100%);
+  background-position: center top;
   background-repeat: no-repeat;
+  background-size: auto, 100% 305px;
 }
 
 .promo-section__container {
   display: flex;
   flex-direction: column;
+  padding-top: 27px;
 
   text-align: center;
 }
 
-// .promo-section__title {
-
-// }
-
 .promo-section__tagline {
+  margin-top: 25px;
+  margin-bottom: 28px;
+
   @include font(14px, 14px, $oswald, #ffffff);
   text-transform: uppercase;
 }
 
-// .promo-section__product {
-
-// }
-
-// .promo-section__button {
-
-// }
+.promo-section__product {
+  margin-bottom: 3px;
+}
 
 @media (min-width: $tablet-width) {
   .promo-section {
@@ -38,34 +34,58 @@
 
     text-align: left;
 
-    background-color: #ffffff;
+    background-color: transparent;
     background-image: none;
+  }
+
+  .promo-section__header {
+    width: 430px;
   }
 
   .promo-section__container {
     align-items: flex-start;
-    padding-left: 120px;
+    padding-top: 9px;
+    padding-left: 118px;
 
     text-align: left;
   }
 
-  .promo-section__title {
-    width: 430px;
+  .promo-section__tagline {
+    margin-top: 41px;
+    margin-bottom: 48px;
+
+    font-size: 20px;
+    line-height: 20px;
+    color: $font-color-head;
   }
 
-  .promo-section__tagline {
-    width: 430px;
-    color: $font-color-head;
+  .promo-section__product {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo-section {
-    min-height: 696px;
-    padding-top: 142px;
+    position: relative;
+
+    min-height: 583px;
+    padding-top: 0;
   }
 
   .promo-section__container {
-    padding-left: 190px;
+    padding-top: 80px;
+    padding-left: 120px;
+  }
+
+  .promo-section__tagline {
+    margin-bottom: 53px;
+  }
+
+  .promo-section__product {
+    right: 327px;
+    top: 0;
+    z-index: 0;
   }
 }
