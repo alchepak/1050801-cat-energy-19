@@ -12,9 +12,10 @@
 
 @media (min-width: $tablet-width) {
   .section-title {
+    font-size: 60px;
+    line-height: 60px;
+
     &--promo {
-      font-size: 60px;
-      line-height: 60px;
       color: inherit;
     }
   }
