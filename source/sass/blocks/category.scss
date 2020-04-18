@@ -8,6 +8,10 @@
   background-color: $grey-back;
 }
 
+.category:last-of-type {
+  margin-bottom: 0;
+}
+
 .category__title {
   position: relative;
 
