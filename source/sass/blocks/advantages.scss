@@ -1,18 +1,24 @@
-// .advantages {
-
-// }
-
-// .advantages__title {
-
-// }
+.advantages {
+  padding-top: 18px;
+  padding-bottom: 22px;
+}
 
 .advantages__list {
   @include list-reset;
+  margin-top: 28px;
 }
 
 .advantages__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
   &::before {
     content: "";
+
+    display: block;
+    min-width: 60px;
+    height: 60px;
 
     background-color: $green;
     background-position: center;
@@ -36,9 +42,10 @@
   }
 }
 
-// .advantages__info {
-
-// }
+.advantages__info {
+  margin: 0;
+  margin-left: 20px;
+}
 
 @media (min-width: $tablet-width) {
   .advantages__list {

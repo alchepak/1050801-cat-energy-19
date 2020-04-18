@@ -2,9 +2,21 @@
   padding-top: 22px;
 }
 
+.categories__item {
+  margin-bottom: 20px;
+}
+
+.categories__item:last-of-type {
+  margin-bottom: 0;
+}
+
 @media (min-width: $tablet-width) {
   .categories {
     padding-top: 0;
+  }
+
+  .categories__item {
+    margin-bottom: 30px;
   }
 }
 
@@ -18,5 +30,6 @@
 
   .categories__item {
     width: calc(50% - #{$desktop-indent});
+    margin-bottom: 0;
   }
 }
