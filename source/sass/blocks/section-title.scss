@@ -1,17 +1,21 @@
 .section-title {
+  margin: 0;
+
   @include font(36px, 60px, $oswald, $font-color-head);
   font-weight: normal;
 
   &--promo {
-    color: #ffffff;
     line-height: 36px;
+    color: #ffffff;
   }
 }
 
 @media (min-width: $tablet-width) {
   .section-title {
     &--promo {
-      color: $font-color-head;
+      font-size: 60px;
+      line-height: 60px;
+      color: inherit;
     }
   }
 }

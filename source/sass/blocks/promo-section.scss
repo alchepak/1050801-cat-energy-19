@@ -24,13 +24,17 @@
 }
 
 .promo-section__product {
+  width: 280px;
+  height: 270px;
   margin-bottom: 3px;
 }
 
 @media (min-width: $tablet-width) {
   .promo-section {
-    min-height: 868px;
-    padding-top: 67px;
+    position: relative;
+
+    padding-top: 49px;
+    padding-bottom: 529px;
 
     text-align: left;
 
@@ -62,7 +66,13 @@
   .promo-section__product {
     position: absolute;
     bottom: 0;
+    left: 50%;
     z-index: -1;
+
+    width: 709px;
+    height: 609px;
+    margin-bottom: 0;
+    margin-left: -355px;
   }
 }
 
@@ -71,7 +81,8 @@
     position: relative;
 
     min-height: 583px;
-    padding-top: 0;
+    padding-top: 29px;
+    padding-bottom: 0;
   }
 
   .promo-section__container {
@@ -85,7 +96,11 @@
 
   .promo-section__product {
     right: 327px;
-    top: 0;
+    top: 29px;
     z-index: 0;
+
+    width: 552px;
+    height: 499px;
+    margin-left: -160px;
   }
 }

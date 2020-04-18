@@ -1,10 +1,8 @@
-.page-header {
-  border-bottom: 1px solid #e6e6e6;
-}
-
 .page-header__container {
   display: flex;
   flex-wrap: wrap;
+
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .page-header__logo {
@@ -17,7 +15,8 @@
 .page-header__logo-img {
   width: 33px;
   height: 38px;
-  margin-right: $mobile-indent;
+  margin-top: -5px;
+  margin-right: 13px;
 }
 
 .page-header__logo-text {
@@ -80,19 +79,16 @@
   }
 }
 
-.page-header__container nav {
-  flex-grow: 1;
-}
-
 @media (min-width: $tablet-width) {
   .page-header {
     padding-top: 24px;
-    border: none;
   }
 
   .page-header__container {
     flex-wrap: nowrap;
     justify-content: space-between;
+
+    border: none;
   }
 
   .page-header__logo {

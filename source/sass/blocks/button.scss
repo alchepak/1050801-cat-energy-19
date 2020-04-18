@@ -1,11 +1,16 @@
 .button {
-  border: none;
+  display: inline-block;
+  padding-top: 11px;
+  padding-right: 15px;
+  padding-bottom: 11px;
+  padding-left: 15px;
 
   @include font(16px, 20px, $oswald, #ffffff);
   text-align: center;
   text-transform: uppercase;
 
   background-color: $green;
+  border: none;
 
   &:hover,
   &:focus {
@@ -33,5 +38,18 @@
 
   &--additional:active {
     background-color: $grey-back-darken;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--promo {
+      width: 245px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }
