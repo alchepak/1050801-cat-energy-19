@@ -1,10 +1,11 @@
-// .inner-page {
+.inner-page {
+  padding-top: 15px;
+}
 
-// }
-
-// .inner-page__title {
-
-// }
+.inner-page__title {
+  margin: 0;
+  margin-bottom: 28px;
+}
 
 .inner-page__info {
   @include font(14px, 18px, $oswald, $font-color-head);

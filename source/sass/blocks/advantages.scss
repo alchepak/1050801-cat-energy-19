@@ -3,6 +3,10 @@
   padding-bottom: 22px;
 }
 
+.advantages__title {
+  margin: 0;
+}
+
 .advantages__list {
   @include list-reset;
   margin-top: 28px;
