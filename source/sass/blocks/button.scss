@@ -1,8 +1,8 @@
 .button {
   display: inline-block;
-  padding-top: 11px;
+  padding-top: 10px;
   padding-right: 15px;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
   padding-left: 15px;
 
   @include font(16px, 20px, $oswald, #ffffff);
@@ -22,6 +22,9 @@
   }
 
   &--promo {
+    padding-top: 11px;
+    padding-bottom: 11px;
+
     font-size: 14px;
     line-height: 18px;
   }
