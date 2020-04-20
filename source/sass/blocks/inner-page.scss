@@ -1,12 +1,29 @@
-// .inner-page {
+.inner-page {
+  padding-top: 15px;
+}
 
-// }
-
-// .inner-page__title {
-
-// }
+.inner-page__title {
+  margin: 0;
+  margin-bottom: 28px;
+}
 
 .inner-page__info {
   @include font(14px, 18px, $oswald, $font-color-head);
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .inner-page {
+    padding-top: 58px;
+  }
+
+  .inner-page__title {
+    margin-bottom: 56px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .inner-page {
+    padding-top: 75px;
+  }
 }

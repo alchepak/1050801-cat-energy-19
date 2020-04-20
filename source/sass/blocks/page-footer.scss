@@ -3,33 +3,73 @@
 }
 
 .page-footer__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 236px;
+  padding-top: 39px;
+  padding-bottom: 22px;
 }
 
-// .page-footer__logo {
+.page-footer__logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
 
-// }
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.8;
+  }
 
-// .page-footer__logo-header {
-
-// }
-
-// .page-footer__social {
-
-// }
+  &[href]:active {
+    opacity: 0.6;
+  }
+}
 
 .page-footer__developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+
   @include font(16px, 16px);
+
+  &:hover path,
+  &:focus path {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__academy-icon {
+  min-width: 27px;
+  height: 34px;
+
+  path {
+    fill: #666666;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__info {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-height: 150px;
+    align-items: center;
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  .page-footer__logo {
+    margin-right: 18px;
+    margin-bottom: 0;
+  }
+
+  .page-footer__developer {
+    width: 165px;
+    margin: 0;
+  }
+
+  .page-footer__academy-icon {
+    margin-left: 23px;
   }
 }

@@ -1,11 +1,28 @@
-// .main-nav {
-// }
+.main-nav {
+  display: none;
+  width: 100%;
 
-// .main-nav__list {
-// }
+  &.no-js {
+    display: block;
+  }
+
+  &--opened {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
+    display: block;
+    width: auto;
+    max-width: 516px;
     min-height: auto;
     margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    max-width: 50%;
   }
 }

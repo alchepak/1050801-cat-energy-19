@@ -1,11 +1,16 @@
 .button {
-  border: none;
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
 
   @include font(16px, 20px, $oswald, #ffffff);
   text-align: center;
   text-transform: uppercase;
 
   background-color: $green;
+  border: none;
 
   &:hover,
   &:focus {
@@ -13,10 +18,14 @@
   }
 
   &:active {
+    color: rgba(255, 255, 255, 0.3);
     background-color: $green-darken;
   }
 
   &--promo {
+    padding-top: 11px;
+    padding-bottom: 11px;
+
     font-size: 14px;
     line-height: 18px;
   }
@@ -32,6 +41,20 @@
   }
 
   &--additional:active {
+    color: rgba(0, 0, 0, 0.3);
     background-color: $grey-back-darken;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--promo {
+      width: 245px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }

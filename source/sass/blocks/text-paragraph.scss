@@ -1,3 +1,10 @@
 .text-paragraph {
   @include font(14px, 18px);
 }
+
+@media (min-width: $tablet-width) {
+  .text-paragraph {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

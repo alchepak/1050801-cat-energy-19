@@ -1,14 +1,22 @@
-// .categories {
-
-// }
+.categories {
+  padding-top: 22px;
+}
 
 .categories__item {
-  min-height: 266px;
+  margin-bottom: 20px;
+}
+
+.categories__item:last-of-type {
+  margin-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
+  .categories {
+    padding-top: 0;
+  }
+
   .categories__item {
-    min-height: 372px;
+    margin-bottom: 30px;
   }
 }
 
@@ -17,9 +25,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 80px;
   }
 
   .categories__item {
     width: calc(50% - #{$desktop-indent});
+    margin-bottom: 0;
   }
 }

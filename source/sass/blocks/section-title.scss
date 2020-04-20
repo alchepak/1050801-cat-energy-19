@@ -3,15 +3,18 @@
   font-weight: normal;
 
   &--promo {
-    color: #ffffff;
     line-height: 36px;
+    color: #ffffff;
   }
 }
 
 @media (min-width: $tablet-width) {
   .section-title {
+    font-size: 60px;
+    line-height: 60px;
+
     &--promo {
-      color: $font-color-head;
+      color: inherit;
     }
   }
 }
