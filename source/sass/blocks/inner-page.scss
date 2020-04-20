@@ -11,3 +11,13 @@
   @include font(14px, 18px, $oswald, $font-color-head);
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .inner-page {
+    padding-top: 58px;
+  }
+
+  .inner-page__title {
+    margin-bottom: 56px;
+  }
+}
