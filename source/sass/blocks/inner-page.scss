@@ -21,3 +21,9 @@
     margin-bottom: 56px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .inner-page {
+    padding-top: 75px;
+  }
+}

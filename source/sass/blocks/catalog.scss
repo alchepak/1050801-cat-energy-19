@@ -56,13 +56,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .catalog__list {
+  .catalog {
     margin-right: -1 * $desktop-indent;
     margin-left: -1 * $desktop-indent;
   }
 
   .catalog__item {
-    margin-right: $desktop-indent;
-    margin-left: $desktop-indent;
+    width: 25%;
+    padding-right: $desktop-indent;
+    padding-bottom: 34px;
+    padding-left: $desktop-indent;
   }
 }
