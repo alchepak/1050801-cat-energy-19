@@ -1,9 +1,19 @@
 .main-nav {
+  display: none;
   width: 100%;
+
+  &.no-js {
+    display: block;
+  }
+
+  &--opened {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    display: block;
     width: auto;
     max-width: 516px;
     min-height: auto;

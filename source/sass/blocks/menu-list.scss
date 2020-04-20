@@ -17,6 +17,15 @@
   @include font(20px, 20px, $oswald, $font-color-head);
   font-weight: 500;
   text-transform: uppercase;
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -69,7 +78,7 @@
   .menu-list--index .menu-list__link {
     color: #ffffff;
 
-    &--active:after {
+    &--active::after {
       background-color: #ffffff;
     }
   }

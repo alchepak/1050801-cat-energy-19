@@ -15,6 +15,22 @@
   height: 62px;
   padding-right: 14px;
   padding-left: 14px;
+
+  &:hover path,
+  &:hover circle,
+  &:focus path,
+  &:focus circle {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active path,
+  &:active circle {
+    fill: $green;
+  }
 }
 
 .social-list__icon {
