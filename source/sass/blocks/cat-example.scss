@@ -1,4 +1,7 @@
 .cat-example {
+  padding-top: 17px;
+  padding-bottom: 35px;
+
   background-color: $grey-back;
 }
 
@@ -6,13 +9,26 @@
   margin: 0;
 }
 
-// .cat-example__info {
+.cat-example__info {
+  margin-top: 23px;
+  margin-bottom: 25px;
+}
 
-// }
+.cat-example__data {
+  text-align: center;
+}
 
 .cat-example__price {
+  margin-top: 18px;
+  margin-bottom: 34px;
+
   @include font(14px, 20px, $oswald, $font-color-head);
   text-transform: uppercase;
+}
+
+.cat-example__slider {
+  margin-right: -1 * $mobile-indent;
+  margin-left: -1 * $mobile-indent;
 }
 
 @media (min-width: $tablet-width) {

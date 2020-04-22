@@ -2,24 +2,31 @@
   text-align: center;
 }
 
-// .changer__item {
+.changer__item {
+  display: block;
+  margin: 0 auto;
 
-//   &--before {
+  &--after {
+    display: none;
+  }
+}
 
-//   }
-
-//   &--after {
-
-//   }
-// }
+.changer__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  margin-left: 5px;
+}
 
 .changer__control {
-  border: none;
+  padding: 0;
 
   @include font(16px, 20px, $oswald, $font-color-head);
   text-transform: uppercase;
 
   background-color: transparent;
+  border: none;
 
   // &--before {
 
@@ -31,9 +38,36 @@
 }
 
 .changer__line {
+  display: flex;
+  width: 84px;
+  height: 14px;
+  margin: 0 18px;
+  padding: 3px 5px;
+
   background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
 }
 
 .changer__switch {
+  width: 50%;
+
   background-color: $green;
+  border-radius: 3px;
+
+  transition: margin-left 0.3s;
+}
+
+.changer__checkbox {
+  &:checked ~ .changer__item--before {
+    display: none;
+  }
+
+  &:checked ~ .changer__item--after {
+    display: block;
+  }
+
+  &:checked ~ .changer__actions .changer__switch {
+    margin-left: 50%;
+  }
 }
