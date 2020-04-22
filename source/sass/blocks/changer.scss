@@ -27,14 +27,7 @@
 
   background-color: transparent;
   border: none;
-
-  // &--before {
-
-  // }
-
-  // &--after {
-
-  // }
+  cursor: pointer;
 }
 
 .changer__line {
@@ -47,6 +40,7 @@
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .changer__switch {
