@@ -28,14 +28,43 @@
 }
 
 .options__value {
+  align-self: center;
   width: 71%;
-  margin-right: 18px;
+  margin-right: 0;
   margin-top: -8px;
-  margin-left: 18px;
-  padding-right: 10px;
-  padding-left: 10px;
+  margin-left: 0;
+  padding-right: 8px;
+  padding-left: 8px;
 
   @include font(12px, 12px);
 
   background-color: $grey-back;
+}
+
+@media (min-width: $tablet-width) {
+  .options {
+    width: calc(50% + #{$tablet-indent});
+  }
+
+  .options__container {
+    width: calc(50% - #{$tablet-indent});
+    margin-right: 18px;
+  }
+
+  .options__key {
+    padding-top: 15px;
+    padding-bottom: 18px;
+
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .options__value {
+    width: auto;
+
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: #ffffff;
+  }
 }

@@ -1,9 +1,26 @@
 .changer {
   text-align: center;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 462px;
+
+    background-image: linear-gradient(to right, $grey-back 0, $grey-back 50%, $grey-back-darken 50%, $grey-back-darken 100%);
+    background-repeat: no-repeat;
+  }
 }
 
 .changer__item {
   display: block;
+  width: 320px;
+  height: 240px;
   margin: 0 auto;
 
   &--after {
@@ -15,14 +32,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 32px;
-  margin-left: 5px;
+  margin-top: 29px;
 }
 
 .changer__control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 26px;
   padding: 0;
 
   @include font(16px, 20px, $oswald, $font-color-head);
+  text-align: center;
   text-transform: uppercase;
 
   background-color: transparent;
@@ -34,13 +56,12 @@
   display: flex;
   width: 84px;
   height: 14px;
-  margin: 0 18px;
+  margin: 0 15px;
   padding: 3px 5px;
 
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
   border-radius: 6px;
-  cursor: pointer;
 }
 
 .changer__switch {
@@ -49,19 +70,143 @@
   background-color: $green;
   border-radius: 3px;
 
-  transition: margin-left 0.3s;
+  transition: all 0.5s;
 }
 
-.changer__checkbox {
-  &:checked ~ .changer__item--before {
+.changer__before {
+  bottom: 0;
+}
+
+.changer__after {
+  bottom: 0;
+
+  &:checked ~ .changer__container .changer__item--before {
     display: none;
   }
 
-  &:checked ~ .changer__item--after {
+  &:checked ~ .changer__container .changer__item--after {
     display: block;
   }
 
   &:checked ~ .changer__actions .changer__switch {
     margin-left: 50%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .changer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .changer__container {
+    position: relative;
+    height: 517px;
+  }
+
+  .changer__item {
+    position: absolute;
+    left: 50%;
+
+    width: 690px;
+    height: 517px;
+    margin-left: -338px;
+
+    clip: rect(auto, 338px, auto, auto);
+
+    &--after {
+      display: block;
+      clip: rect(auto, auto, auto, 338px);
+    }
+  }
+
+  .changer__actions {
+    margin-top: 13px;
+  }
+
+  .changer__control {
+    width: 55px;
+    height: 34px;
+
+    font-size: 20px;
+  }
+
+  .changer__line {
+    justify-content: center;
+    width: 428px;
+    height: 6px;
+    margin: 0 19px;
+    padding-right: 0;
+    padding-left: 0;
+
+    background-color: #dcdcdc;
+    border: none;
+    border-radius: 2px;
+  }
+
+  .changer__switch {
+    display: flex;
+    width: 34px;
+    min-width: 34px;
+    height: 34px;
+    margin-top: -17px;
+
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+    &::after {
+      content: "";
+
+      width: 8px;
+      height: 8px;
+      margin: auto;
+
+      background-color: #68b738;
+      border-radius: 50%;
+    }
+  }
+
+  .changer__before {
+    &:checked ~ .changer {
+      &::before {
+        background-color: $grey-back;
+        background-image: none;
+      }
+    }
+
+    &:checked ~ .changer .changer__item--before {
+      clip: auto;
+    }
+
+    &:checked ~ .changer .changer__item--after {
+      display: none;
+    }
+
+    &:checked ~ .changer .changer__switch {
+      margin-left: -100%;
+    }
+  }
+
+  .changer__after {
+    &:checked ~ .changer {
+      &::before {
+        background-color: $grey-back-darken;
+        background-image: none;
+      }
+    }
+
+    &:checked ~ .changer .changer__item--before {
+      display: none;
+    }
+
+    &:checked ~ .changer .changer__item--after {
+      clip: auto;
+    }
+
+    &:checked ~ .changer .changer__switch {
+      margin-left: 100%;
+    }
   }
 }

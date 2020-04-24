@@ -86,7 +86,7 @@
         <div class="cat-example__container container">
           <div class="cat-example__card">
             <h2 class="cat-example__title section-title">Живой пример</h2>
-            <p class="cat-example__info text-paragraph">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <p class="cat-example__info text-paragraph">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему спит по 16 часов в день.</p>
 
             <div class="cat-example__data">
               <dl class="options">
@@ -105,21 +105,23 @@
             </div>
           </div>
 
-          <div class="cat-example__slider changer">
-            <input class="visually-hidden changer__checkbox" type="checkbox" name="catChanger" id="cat-changer">
+          <input class="visually-hidden changer__before" type="radio" name="catChoice" id="cat-choice-before">
+          <input class="visually-hidden changer__after" type="radio" name="catChoice" id="cat-choice-after">
 
-            <img class="changer__item changer__item--before" src="img/before-mobile@1x.png" alt="Кот Борис 2 месяца назад. Он такой большой, что не в силах поднять себя" width="320" height="240">
-            <img class="changer__item changer__item--after" src="img/after-mobile@1x.png" alt="Кот Борис, который сбросил 5 кг за 2 месяца" width="320" height="240">
+          <div class="cat-example__slider changer">
+            <div class="changer__container">
+              <img class="changer__item changer__item--before" src="img/before-tablet@1x.png" alt="Кот Борис 2 месяца назад. Он такой большой, что не в силах поднять себя" width="320" height="240">
+              <img class="changer__item changer__item--after" src="img/after-tablet@1x.png" alt="Кот Борис, который сбросил 5 кг за 2 месяца" width="320" height="240">
+            </div>
 
             <div class="changer__actions">
-              <button class="changer__control changer__control--before">Было</button>
+              <label class="changer__control changer__control--before" for="cat-choice-before">Было</label>
 
-              <label class="changer__line" for="cat-changer">
+              <div class="changer__line" for="cat-changer">
                 <span class="changer__switch"></span>
-                <span class="visually-hidden">Выбери кота</span>
-              </label>
+              </div>
 
-              <button class="changer__control changer__control--after">Стало</button>
+              <label class="changer__control changer__control--after" for="cat-choice-after">Стало</label>
             </div>
           </div>
         </div>

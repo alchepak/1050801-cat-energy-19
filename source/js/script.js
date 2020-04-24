@@ -11,17 +11,3 @@ navToggle.addEventListener('click', function() {
   mainNav.classList.toggle('main-nav--opened');
 });
 
-let changerControl = document.querySelectorAll(".changer__control");
-let changerCheckbox = document.querySelector(".changer__checkbox");
-
-for (let i = 0; i < changerControl.length; i++) {
-  changerControl[i].addEventListener('click', function() {
-    if (this.classList.contains("changer__control--after"))
-    {
-      changerCheckbox.checked = true;
-    }
-    else {
-      changerCheckbox.checked = false;
-    }
-  });
-}
