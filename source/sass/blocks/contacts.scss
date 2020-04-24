@@ -8,8 +8,8 @@
 
 .contacts__container {
   display: flex;
-  margin-top: 29px;
-  margin-bottom: 25px;
+  padding-top: 29px;
+  padding-bottom: 25px;
 }
 
 .contacts__tagline {
@@ -35,21 +35,29 @@
 @media (min-width: $tablet-width) {
   .contacts__container {
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
+    padding-top: 64px;
+    padding-right: 41px;
+    padding-bottom: 57px;
+    padding-left: 41px;
   }
 
   .contacts__tagline {
     width: 170px;
+
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .contacts__address {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
 
     width: 160px;
+    height: 79px;
 
+    font-size: 16px;
     text-align: right;
   }
 }

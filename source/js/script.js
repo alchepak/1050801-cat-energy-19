@@ -10,4 +10,3 @@ navToggle.addEventListener('click', function() {
   this.classList.toggle('page-header__toggle--opened');
   mainNav.classList.toggle('main-nav--opened');
 });
-

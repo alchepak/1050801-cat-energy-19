@@ -33,13 +33,15 @@
   justify-content: center;
   align-items: center;
   margin-top: 29px;
+  margin-left: 5px;
 }
 
 .changer__control {
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45px;
   height: 26px;
   padding: 0;
 
@@ -47,8 +49,6 @@
   text-align: center;
   text-transform: uppercase;
 
-  background-color: transparent;
-  border: none;
   cursor: pointer;
 }
 
@@ -56,7 +56,8 @@
   display: flex;
   width: 84px;
   height: 14px;
-  margin: 0 15px;
+  margin-right: 18px;
+  margin-left: 18px;
   padding: 3px 5px;
 
   background-color: #ffffff;
@@ -65,12 +66,17 @@
 }
 
 .changer__switch {
+  position: relative;
+  left: 0;
+
   width: 50%;
 
   background-color: $green;
+  border: none;
   border-radius: 3px;
+  cursor: pointer;
 
-  transition: all 0.5s;
+  transition: left 0.5s;
 }
 
 .changer__before {
@@ -80,16 +86,16 @@
 .changer__after {
   bottom: 0;
 
-  &:checked ~ .changer__container .changer__item--before {
+  &:checked ~ .changer .changer__item--before {
     display: none;
   }
 
-  &:checked ~ .changer__container .changer__item--after {
+  &:checked ~ .changer .changer__item--after {
     display: block;
   }
 
-  &:checked ~ .changer__actions .changer__switch {
-    margin-left: 50%;
+  &:checked ~ .changer .changer__switch {
+    left: 50%;
   }
 }
 
@@ -122,20 +128,30 @@
 
   .changer__actions {
     margin-top: 13px;
+    margin-left: 0;
   }
 
   .changer__control {
-    width: 55px;
     height: 34px;
-
     font-size: 20px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+      border: none;
+    }
   }
 
   .changer__line {
     justify-content: center;
     width: 428px;
     height: 6px;
-    margin: 0 19px;
+    margin-right: 21px;
+    margin-left: 24px;
     padding-right: 0;
     padding-left: 0;
 
@@ -145,6 +161,8 @@
   }
 
   .changer__switch {
+    position: relative;
+
     display: flex;
     width: 34px;
     min-width: 34px;
@@ -155,6 +173,16 @@
     border: 1px solid #cdcdcd;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid $green;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    }
 
     &::after {
       content: "";
@@ -185,7 +213,7 @@
     }
 
     &:checked ~ .changer .changer__switch {
-      margin-left: -100%;
+      left: -50%;
     }
   }
 
@@ -206,7 +234,7 @@
     }
 
     &:checked ~ .changer .changer__switch {
-      margin-left: 100%;
+      left: 50%;
     }
   }
 }
