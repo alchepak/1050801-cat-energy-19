@@ -22,3 +22,17 @@
     background-color: $green;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .group-title {
+    padding-right: 37px;
+    padding-left: 37px;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      margin-top: 22px;
+    }
+  }
+}

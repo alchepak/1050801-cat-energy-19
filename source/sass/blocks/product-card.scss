@@ -93,6 +93,10 @@
     align-items: baseline;
   }
 
+  .product-card__title {
+    font-size: 20px;
+  }
+
   .product-card__data {
     font-size: 16px;
   }
@@ -130,15 +134,25 @@
     text-align: center;
   }
 
-  .product-card--big .product-card__title {
-    font-size: 20px;
-  }
-
   .product-card--big td {
     padding-top: 8px;
     padding-bottom: 7px;
 
     border-bottom: 1px solid #cdcdcd;
+  }
+
+  .product-card--small .product-card__info {
+    margin-bottom: 17px;
+  }
+
+  .product-card--small .product-card__data {
+    width: auto;
+    font-size: 16px;
+  }
+
+  .product-card--small td {
+    min-width: 95px;
+    text-align: right;
   }
 }
 
