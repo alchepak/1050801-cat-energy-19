@@ -30,7 +30,6 @@
 .options__value {
   align-self: center;
   width: 71%;
-  margin-right: 0;
   margin-top: -8px;
   margin-left: 0;
   padding-right: 8px;
@@ -43,7 +42,7 @@
 
 @media (min-width: $tablet-width) {
   .options {
-    width: calc(50% + #{$tablet-indent});
+    width: 384px;
   }
 
   .options__container {
@@ -66,5 +65,11 @@
     line-height: 14px;
 
     background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .options__value {
+    background: $grey-back;
   }
 }
