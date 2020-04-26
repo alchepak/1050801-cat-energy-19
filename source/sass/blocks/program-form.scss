@@ -1,13 +1,10 @@
 .program-form {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 
   padding-top: 39px;
   padding-bottom: 32px;
-}
-
-.program-form__group {
-  width: 100%;
 }
 
 .program-form__submit {
@@ -55,12 +52,18 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .program-form__button {
-//     width: calc(50% - #{$desktop-indent});
-//   }
+@media (min-width: $desktop-width) {
+  .program-form {
+    padding-right: 0;
+    padding-bottom: 82px;
+    padding-left: 0;
+  }
 
-//   .program-form__note {
-//     margin-left: $desktop-indent * 2;
-//   }
-// }
+  .program-form__button {
+    width: calc(50% - #{$desktop-indent});
+  }
+
+  .program-form__note {
+    margin-left: $desktop-indent * 2;
+  }
+}

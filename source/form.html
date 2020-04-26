@@ -40,26 +40,28 @@
       <p class="inner-page__info">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
       <form class="program-form form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="program-form__group inputs-group inputs__group--main">
+        <fieldset class="program-form__group inputs-group inputs-group--main">
           <legend class="visually-hidden">Основные данные кота</legend>
 
-          <label class="inputs-group__item">
-            <span class="inputs-group__label">Имя:*</span>
-            <input class="inputs-group__input form__input" type="text" name="catName" placeholder="Барсик" required>
-          </label>
+          <div class="inputs-group__container">
+            <label class="inputs-group__item">
+              <span class="inputs-group__label">Имя:*</span>
+              <input class="inputs-group__input form__input" type="text" name="catName" placeholder="Барсик" required>
+            </label>
 
-          <label class="inputs-group__item">
-            <span class="inputs-group__label">Вес&nbsp;(кг):*</span>
-            <input class="inputs-group__input form__input" type="number" name="catWeight" placeholder="7" required>
-          </label>
+            <label class="inputs-group__item">
+              <span class="inputs-group__label">Вес&nbsp;(кг):*</span>
+              <input class="inputs-group__input form__input" type="number" name="catWeight" placeholder="7" required>
+            </label>
 
-          <label class="inputs-group__item">
-            <span class="inputs-group__label">Возраст&nbsp;(лет):</span>
-            <input class="inputs-group__input form__input" type="number" name="catAge" placeholder="7">
-          </label>
+            <label class="inputs-group__item">
+              <span class="inputs-group__label">Возраст&nbsp;(лет):</span>
+              <input class="inputs-group__input form__input" type="number" name="catAge" placeholder="7">
+            </label>
+          </div>
         </fieldset>
 
-        <fieldset class="program-form__group inputs-group inputs__group--program">
+        <fieldset class="program-form__group inputs-group inputs-group--program">
           <legend class="visually-hidden">Название программы</legend>
 
           <div class="inputs-group__container">
@@ -83,7 +85,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="program-form__group inputs-group inputs__group--contacts">
+        <fieldset class="program-form__group inputs-group inputs-group--contacts">
           <legend class="inputs-group__title group-title">Контактные данные<br> (владельца кота)</legend>
 
           <div class="inputs-group__container">
@@ -105,7 +107,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="program-form__group inputs-group inputs__group--comment">
+        <fieldset class="program-form__group inputs-group inputs-group--comment">
           <legend class="inputs-group__title group-title">Комментарий</legend>
 
           <div class="inputs-group__container">
@@ -116,7 +118,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="program-form__group inputs-group inputs__group--extra">
+        <fieldset class="program-form__group inputs-group inputs-group--extra">
           <legend class="inputs-group__title group-title">Дополнительно</legend>
 
           <div class="inputs-group__container">
