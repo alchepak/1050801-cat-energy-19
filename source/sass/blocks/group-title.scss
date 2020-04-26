@@ -8,7 +8,7 @@
 
   background-color: #ffffff;
 
-  &::after {
+  &::before {
     content: "";
 
     position: absolute;
@@ -31,8 +31,12 @@
     font-size: 36px;
     line-height: 36px;
 
-    &::after {
+    &::before {
       margin-top: 22px;
     }
+  }
+
+  .group-title br {
+    display: none;
   }
 }

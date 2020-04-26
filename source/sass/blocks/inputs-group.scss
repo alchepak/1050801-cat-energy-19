@@ -1,57 +1,103 @@
 .inputs-group {
   margin: 0;
-  margin-bottom: 22px;
   padding: 0;
 
   border: none;
 }
 
-// .inputs-group__title {
+.inputs-group__container {
+  display: flex;
+  flex-direction: column;
+}
 
-// }
+.inputs-group__title {
+  max-width: none;
+  margin-right: -1 * $mobile-indent;
+  margin-bottom: 34px;
+  margin-left: -1 * $mobile-indent;
+}
 
 .inputs-group__item {
+  position: relative;
   display: flex;
+  align-items: center;
 
   @include font(16px, 18px, $oswald, $font-color-head);
   text-transform: uppercase;
+
+  &:not(:first-of-type) {
+    margin-top: 14px;
+  }
 }
 
 .inputs-group__input {
   flex-grow: 1;
-}
 
-@media (min-width: $tablet-width) {
-  .inputs-group--program .inputs-group__container {
-    border: 1px solid #cdcdcd;
+  &[type="text"],
+  &[type="number"] {
+    margin-left: 15px;
   }
 
-  .inputs-group--extra .inputs-group__container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .inputs-group--extra .inputs-group__item {
-    width: 50%;
+  &[type="email"],
+  &[type="tel"] {
+    margin-left: 9px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .inputs-group--main,
-  .inputs-group--program {
-    width: 50%;
+.inputs-group__icon {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+
+  &--email {
+    right: 16px;
+
+    width: 17px;
+    height: 13px;
+    margin-top: -7px;
   }
 
-  .inputs-group--contacts .inputs-group__container {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  &--tel {
+    right: 13px;
 
-  .inputs-group--contacts .inputs-group__item {
-    width: 50%;
-  }
-
-  .inputs-group--extra .inputs-group__item {
-    width: 25%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
   }
 }
+
+// @media (min-width: $tablet-width) {
+//   .inputs-group--program .inputs-group__container {
+//     border: 1px solid #cdcdcd;
+//   }
+
+//   .inputs-group--extra .inputs-group__container {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+
+//   .inputs-group--extra .inputs-group__item {
+//     width: 50%;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .inputs-group--main,
+//   .inputs-group--program {
+//     width: 50%;
+//   }
+
+//   .inputs-group--contacts .inputs-group__container {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+
+//   .inputs-group--contacts .inputs-group__item {
+//     width: 50%;
+//   }
+
+//   .inputs-group--extra .inputs-group__item {
+//     width: 25%;
+//   }
+// }

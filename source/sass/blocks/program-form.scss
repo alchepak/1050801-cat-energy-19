@@ -1,23 +1,56 @@
 .program-form {
   display: flex;
   flex-wrap: wrap;
+
+  margin-right: -1 * $mobile-indent;
+  margin-left: -1 * $mobile-indent;
+  padding-top: 39px;
+  padding-bottom: 32px;
 }
 
 .program-form__group {
   width: 100%;
+  padding-right: $mobile-indent;
+  padding-left: $mobile-indent;
+
+  &:nth-of-type(2) {
+    margin-top: 22px;
+  }
+
+  &:nth-of-type(n+3) {
+    margin-top: 29px;
+  }
+
+  &:nth-of-type(4) {
+    margin-top: 28px;
+  }
+
+  &--program {
+    border-top: 1px solid $grey-back-darken;
+    border-bottom: 1px solid $grey-back-darken;
+  }
 }
 
 .program-form__submit {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 34px;
+  margin-right: $mobile-indent;
+  margin-left: $mobile-indent;
 }
 
 .program-form__note {
-  margin: 0;
+  margin-top: 21px;
+  margin-bottom: 0;
 
   @include font(14px, 16px);
   text-align: center;
+}
+
+.program-form__group--program .inputs-group__container {
+  margin-top: 21px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {

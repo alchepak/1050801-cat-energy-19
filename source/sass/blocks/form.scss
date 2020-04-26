@@ -1,12 +1,27 @@
-// .form {
-
-// }
 .form__input {
+  padding-top: 12px;
+  padding-bottom: 11px;
+  padding-left: 15px;
+
   @include font(16px, 18px, $oswald);
   text-transform: uppercase;
+
+  &[type="text"] {
+    padding-left: 11px;
+  }
+
+  &[type="email"],
+  &[type="tel"] {
+    padding-right: 47px;
+  }
 }
 
 .form__textarea {
+  min-height: 150px;
+  padding: 13px;
+
   @include font(16px, 18px, $oswald);
   text-transform: uppercase;
+
+  resize: none;
 }

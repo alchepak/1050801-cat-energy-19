@@ -4,10 +4,13 @@
 
 .inner-page__title {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .inner-page__info {
+  width: 240px;
+  margin: 0;
+
   @include font(14px, 18px, $oswald, $font-color-head);
   text-transform: uppercase;
 }
