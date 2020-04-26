@@ -1,20 +1,20 @@
 .choice {
   position: relative;
 
-  min-height: 29px;
+  min-height: 30px;
   padding-left: 46px;
 
   cursor: pointer;
 }
 
-.choice__radio {
-  &:checked ~ .choice__radio-label {
+.choice--radio input {
+  &:checked ~ .choice__label {
     background: $green;
     background-clip: content-box;
   }
 }
 
-.choice__radio-label {
+.choice--radio .choice__label {
   position: absolute;
   top: 0;
   left: 0;
@@ -27,8 +27,8 @@
   border-radius: 50%;
 }
 
-.choice__checkbox {
-  &:checked ~ .choice__checkbox-label {
+.choice--checkbox input {
+  &:checked ~ .choice__label {
     background-image: url("../img/icon-tick.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -36,7 +36,7 @@
   }
 }
 
-.choice__checkbox-label {
+.choice--checkbox .choice__label {
   position: absolute;
   top: 0;
   left: 0;
@@ -46,6 +46,23 @@
   height: 30px;
 
   border: 1px solid #cdcdcd;
+}
 
+@media (min-width: $tablet-width) {
+  .choice {
+    min-height: 40px;
+    padding-left: 59px;
+  }
 
+  .choice--radio .choice__label {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .choice--checkbox .choice__label {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
 }

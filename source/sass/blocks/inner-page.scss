@@ -23,6 +23,13 @@
   .inner-page__title {
     margin-bottom: 56px;
   }
+
+  .inner-page__info {
+    width: 370px;
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {

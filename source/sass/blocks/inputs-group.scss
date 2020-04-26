@@ -10,10 +10,47 @@
   flex-direction: column;
 }
 
+/*  --program */
+
+.inputs__group--program .inputs-group__container {
+  margin-top: 23px;
+  margin-right: -1 * $mobile-indent;
+  margin-bottom: 28px;
+  margin-left: -1 * $mobile-indent;
+
+  padding-top: 20px;
+  padding-right: $mobile-indent;
+  padding-bottom: 20px;
+  padding-left: $mobile-indent;
+
+  border-top: 1px solid $grey-back-darken;
+  border-bottom: 1px solid $grey-back-darken;
+}
+
+/* --contacts */
+
+.inputs__group--contacts .inputs-group__container {
+  margin-top: 34px;
+  margin-bottom: 28px;
+}
+
+/* --comment */
+
+.inputs__group--comment .inputs-group__container {
+  margin-top: 35px;
+  margin-bottom: 28px;
+}
+
+/* --extra */
+
+.inputs__group--extra .inputs-group__container {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
 .inputs-group__title {
   max-width: none;
   margin-right: -1 * $mobile-indent;
-  margin-bottom: 34px;
   margin-left: -1 * $mobile-indent;
 }
 
@@ -24,24 +61,44 @@
 
   @include font(16px, 18px, $oswald, $font-color-head);
   text-transform: uppercase;
+}
 
-  &:not(:first-of-type) {
-    margin-top: 14px;
-  }
+/* --main */
+
+.inputs__group--main .inputs-group__item:not(:first-of-type) {
+  margin-top: 14px;
+}
+
+/*  --program */
+
+.inputs__group--program .inputs-group__item:not(:first-of-type) {
+  margin-top: 13px;
+}
+
+/* --contacts */
+
+.inputs__group--contacts .inputs-group__item:not(:first-of-type) {
+  margin-top: 14px;
+}
+
+/* --extra */
+
+.inputs__group--extra .inputs-group__item:not(:first-of-type) {
+  margin-top: 12px;
+}
+
+.inputs-group__label {
+  margin-right: 14px;
 }
 
 .inputs-group__input {
   width: 100%;
+}
 
-  &[type="text"],
-  &[type="number"] {
-    margin-left: 15px;
-  }
+/* --contacts */
 
-  &[type="email"],
-  &[type="tel"] {
-    margin-left: 9px;
-  }
+.inputs__group--contacts .inputs-group__label {
+  margin-right: 10px;
 }
 
 .inputs-group__icon {
@@ -67,20 +124,116 @@
   }
 }
 
-// @media (min-width: $tablet-width) {
-//   .inputs-group--program .inputs-group__container {
-//     border: 1px solid #cdcdcd;
-//   }
+@media (min-width: $tablet-width) {
+  .inputs-group__title {
+    margin-right: -40px;
+    margin-left: -40px;
+  }
 
-//   .inputs-group--extra .inputs-group__container {
-//     display: flex;
-//     flex-wrap: wrap;
-//   }
+  .inputs-group__item {
+    font-size: 20px;
+    line-height: 20px;
+  }
 
-//   .inputs-group--extra .inputs-group__item {
-//     width: 50%;
-//   }
-// }
+  /* --main */
+
+  .inputs__group--main .inputs-group__item:not(:first-of-type) {
+    margin-top: 20px;
+  }
+
+  /* --program */
+
+  .inputs__group--program .inputs-group__item:not(:first-of-type) {
+    margin-top: 13px;
+  }
+
+  /* --contacts */
+
+  .inputs__group--contacts .inputs-group__item:not(:first-of-type) {
+    margin-top: 20px;
+  }
+
+  /* --extra */
+
+  .inputs__group--extra .inputs-group__item {
+    width: 287px;
+  }
+
+  .inputs__group--extra .inputs-group__item:not(:first-of-type) {
+    margin-top: 0;
+  }
+
+  .inputs__group--extra .inputs-group__item:nth-of-type(n+3) {
+    margin-top: 32px;
+  }
+
+  .inputs-group__label {
+    margin-right: 17px;
+
+    &--tel {
+      margin-left: -4px;
+    }
+  }
+
+  /* --contacts */
+
+  .inputs__group--contacts .inputs-group__label {
+    margin-right: 16px;
+  }
+
+  .inputs-group__icon {
+    &--email {
+      right: 19px;
+      margin-top: -6px;
+    }
+
+    &--tel {
+      right: 16px;
+      margin-top: -9px;
+    }
+  }
+
+  /* --program */
+
+  .inputs__group--program .inputs-group__container {
+    margin-top: 72px;
+    margin-right: 0;
+    margin-bottom: 75px;
+    margin-left: 0;
+
+    padding-top: 24px;
+    padding-right: 27px;
+    padding-bottom: 24px;
+    padding-left: 26px;
+
+    border: 1px solid rgba(205, 205, 205, 0.5);
+  }
+
+  /* --contacts */
+
+  .inputs__group--contacts .inputs-group__container {
+    margin-top: 76px;
+    margin-bottom: 65px;
+  }
+
+  /* --comment */
+
+  .inputs__group--comment .inputs-group__container {
+    margin-top: 76px;
+    margin-bottom: 65px;
+  }
+
+  /* --extra */
+
+  .inputs__group--extra .inputs-group__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 57px;
+    margin-bottom: 54px;
+    margin-left: -2px;
+  }
+}
 
 // @media (min-width: $desktop-width) {
 //   .inputs-group--main,
