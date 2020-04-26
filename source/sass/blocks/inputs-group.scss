@@ -31,7 +31,7 @@
 }
 
 .inputs-group__input {
-  flex-grow: 1;
+  width: 100%;
 
   &[type="text"],
   &[type="number"] {
