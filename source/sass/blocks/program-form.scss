@@ -1,10 +1,10 @@
 .program-form {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-}
 
-.program-form__group {
-  width: 100%;
+  padding-top: 39px;
+  padding-bottom: 32px;
 }
 
 .program-form__submit {
@@ -14,15 +14,29 @@
 }
 
 .program-form__note {
-  margin: 0;
+  margin-top: 21px;
+  margin-bottom: 0;
 
   @include font(14px, 16px);
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
+  .program-form {
+    margin: 0;
+    padding-top: 65px;
+    padding-right: 37px;
+    padding-bottom: 72px;
+    padding-left: 42px;
+  }
+
+  .program-form__group {
+    padding: 0;
+  }
+
   .program-form__submit {
     flex-direction: row;
+    margin-left: -1px;
   }
 
   .program-form__button {
@@ -30,12 +44,21 @@
   }
 
   .program-form__note {
+    margin-top: 17px;
     margin-left: $tablet-indent * 2;
+
+    font-size: 16px;
     text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .program-form {
+    padding-right: 0;
+    padding-bottom: 82px;
+    padding-left: 0;
+  }
+
   .program-form__button {
     width: calc(50% - #{$desktop-indent});
   }

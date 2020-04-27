@@ -1,39 +1,218 @@
-.changer {
-  text-align: center;
+.changer__item {
+  display: block;
+  width: 320px;
+  height: 240px;
+  margin: 0 auto;
+
+  &--after {
+    display: none;
+  }
 }
 
-// .changer__item {
-
-//   &--before {
-
-//   }
-
-//   &--after {
-
-//   }
-// }
+.changer__actions {
+  display: flex;
+  align-items: center;
+  margin-top: 29px;
+  padding-right: 58px;
+  padding-left: 64px;
+}
 
 .changer__control {
-  border: none;
+  display: flex;
+  align-items: center;
+  height: 26px;
+  padding: 0;
 
   @include font(16px, 20px, $oswald, $font-color-head);
+  text-align: center;
   text-transform: uppercase;
 
-  background-color: transparent;
-
-  // &--before {
-
-  // }
-
-  // &--after {
-
-  // }
+  cursor: pointer;
 }
 
 .changer__line {
+  display: flex;
+  flex-grow: 1;
+  height: 14px;
+  margin-right: 18px;
+  margin-left: 18px;
+  padding: 3px 5px;
+
   background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
 }
 
 .changer__switch {
+  position: relative;
+  left: 0;
+
+  width: 50%;
+
   background-color: $green;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  transition: left 0.5s;
+}
+
+.changer__before {
+  bottom: 0;
+}
+
+.changer__after {
+  bottom: 0;
+
+  &:checked ~ .changer .changer__item--before {
+    display: none;
+  }
+
+  &:checked ~ .changer .changer__item--after {
+    display: block;
+  }
+
+  &:checked ~ .changer .changer__switch {
+    left: 50%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .changer__container {
+    position: relative;
+    height: 517px;
+  }
+
+  .changer__item {
+    position: absolute;
+    left: 50%;
+
+    width: 690px;
+    height: 517px;
+    margin-left: -338px;
+
+    clip: rect(auto, 338px, auto, auto);
+
+    &--after {
+      display: block;
+      clip: rect(auto, auto, auto, 338px);
+    }
+  }
+
+  .changer__actions {
+    margin-top: 13px;
+    padding-right: 70px;
+    padding-left: 68px;
+  }
+
+  .changer__control {
+    height: 34px;
+    font-size: 20px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+      border: none;
+    }
+  }
+
+  .changer__line {
+    justify-content: center;
+    height: 6px;
+    margin-right: 21px;
+    margin-left: 24px;
+    padding-right: 0;
+    padding-left: 0;
+
+    background-color: #dcdcdc;
+    border: none;
+    border-radius: 2px;
+  }
+
+  .changer__switch {
+    display: flex;
+    width: 34px;
+    min-width: 34px;
+    height: 34px;
+    margin-top: -17px;
+
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid $green;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    &::after {
+      content: "";
+
+      width: 8px;
+      height: 8px;
+      margin: auto;
+
+      background-color: #68b738;
+      border-radius: 50%;
+    }
+  }
+
+  .changer__before {
+    &:checked ~ .changer .changer__item--before {
+      clip: auto;
+    }
+
+    &:checked ~ .changer .changer__item--after {
+      display: none;
+    }
+
+    &:checked ~ .changer .changer__switch {
+      left: -50%;
+    }
+  }
+
+  .changer__after {
+    &:checked ~ .changer .changer__item--before {
+      display: none;
+    }
+
+    &:checked ~ .changer .changer__item--after {
+      clip: auto;
+    }
+
+    &:checked ~ .changer .changer__switch {
+      left: 50%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .changer__container {
+    width: 690px;
+  }
+
+  .changer__item {
+    margin-left: -305px;
+    clip: rect(auto, 365px, auto, auto);
+
+    &--after {
+      clip: rect(auto, auto, auto, 365px);
+    }
+  }
+
+  .changer__actions {
+    margin-top: 34px;
+    padding-left: 120px;
+    padding-right: 0;
+  }
 }

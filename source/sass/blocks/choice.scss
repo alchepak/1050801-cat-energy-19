@@ -1,17 +1,68 @@
-// .choice {
+.choice {
+  position: relative;
 
-// }
+  min-height: 30px;
+  padding-left: 46px;
 
-.choice__radio {
-  &::before {
-    content: "";
-    background-color: $green;
+  cursor: pointer;
+}
+
+.choice--radio input {
+  &:checked ~ .choice__label {
+    background: $green;
+    background-clip: content-box;
   }
 }
 
-.choice__checkbox {
-  &::before {
-    content: "";
+.choice--radio .choice__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+}
+
+.choice--checkbox input {
+  &:checked ~ .choice__label {
     background-image: url("../img/icon-tick.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 21px 16px;
+  }
+}
+
+.choice--checkbox .choice__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid #cdcdcd;
+}
+
+@media (min-width: $tablet-width) {
+  .choice {
+    min-height: 40px;
+    padding-left: 59px;
+  }
+
+  .choice--radio .choice__label {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .choice--checkbox .choice__label {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
   }
 }

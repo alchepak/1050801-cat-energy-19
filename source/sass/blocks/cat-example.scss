@@ -1,4 +1,6 @@
 .cat-example {
+  position: relative;
+  padding-top: 17px;
   background-color: $grey-back;
 }
 
@@ -6,57 +8,112 @@
   margin: 0;
 }
 
-// .cat-example__info {
+.cat-example__info {
+  margin-top: 23px;
+  margin-bottom: 25px;
+}
 
-// }
+.cat-example__data {
+  text-align: center;
+}
 
 .cat-example__price {
+  margin-top: 18px;
+  margin-bottom: 34px;
+
   @include font(14px, 20px, $oswald, $font-color-head);
   text-transform: uppercase;
 }
 
+.cat-example__slider {
+  margin-right: -1 * $mobile-indent;
+  margin-left: -1 * $mobile-indent;
+  padding-bottom: 33px;
+}
+
 @media (min-width: $tablet-width) {
   .cat-example {
-    position: relative;
+    padding-top: 44px;
+    background-color: transparent;
+  }
 
-    background-color: #ffffff;
-    background-image: linear-gradient(to right, $grey-back 0, $grey-back 50%, $grey-back-darken 50%, $grey-back-darken 100%);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100% 462px;
+  .cat-example__info {
+    margin-top: 64px;
+    margin-bottom: 53px;
   }
 
   .cat-example__data {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+  }
+
+  .cat-example__price {
+    width: 192px;
+    margin-top: 6px;
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
   }
 
   .cat-example__slider {
-    margin-top: 240px;
+    margin: 0;
+    margin-top: 80px;
+    padding-bottom: 67px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+
+      width: 100%;
+      height: 462px;
+
+      background-image: linear-gradient(to right, $grey-back 0, $grey-back 50%, $grey-back-darken 50%, $grey-back-darken 100%);
+      background-repeat: no-repeat;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .cat-example {
+    padding-top: 65px;
+  }
+
   .cat-example__container {
     display: flex;
     justify-content: space-between;
   }
 
-  .cat-example__card {
-    width: 50%;
-    min-height: 594px;
-  }
-
-  .cat-example__title {
-    margin-bottom: 137px;
+  .cat-example__info {
+    width: 435px;
+    margin-top: 146px;
+    margin-bottom: 68px;
   }
 
   .cat-example__data {
     display: block;
   }
 
+  .cat-example__price {
+    display: flex;
+    justify-content: space-between;
+    width: 328px;
+    margin-top: 50px;
+  }
+
   .cat-example__slider {
-    width: 50%;
+    width: 690px;
+    margin-top: -55px;
+
+    background-image: linear-gradient(to right, #f2f2f2 0, #f2f2f2 405px, #ebebeb 405px, #ebebeb 100%);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 462px;
   }
 }

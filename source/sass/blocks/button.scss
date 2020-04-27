@@ -11,6 +11,7 @@
 
   background-color: $green;
   border: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -48,7 +49,7 @@
 
 @media (min-width: $tablet-width) {
   .button {
-    &--promo {
+    &--big {
       width: 245px;
       padding-top: 16px;
       padding-bottom: 16px;

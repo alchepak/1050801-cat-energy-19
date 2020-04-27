@@ -43,7 +43,7 @@
             <p class="promo-section__tagline">Занялся собой? Займись котом!</p>
           </header>
           <img class="promo-section__product" src="img/index-can-mobile@1x.png" alt="Корм Cat Energy Pro со вкусом курицы" width="280" height="270">
-          <a class="button button--promo " href="form.html">Подобрать программу</a>
+          <a class="button button--promo button--big " href="form.html">Подобрать программу</a>
         </div>
       </section>
     </header>
@@ -86,35 +86,49 @@
         <div class="cat-example__container container">
           <div class="cat-example__card">
             <h2 class="cat-example__title section-title">Живой пример</h2>
-            <p class="cat-example__info text-paragraph">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <p class="cat-example__info text-paragraph">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему спит по 16 часов в день.</p>
 
             <div class="cat-example__data">
               <dl class="options">
-                <dt class="options__key">5 кг</dt>
-                <dd class="options__value">снижение веса</dd>
+                <div class="options__container">
+                  <dt class="options__key">5 кг</dt>
+                  <dd class="options__value">снижение веса</dd>
+                </div>
 
-                <dt class="options__key">60 дней</dt>
-                <dd class="options__value">затрачено времени</dd>
+                <div class="options__container">
+                  <dt class="options__key">60 дней</dt>
+                  <dd class="options__value">затрачено времени</dd>
+                </div>
               </dl>
 
-              <p class="cat-example__price">Затраты на питание: 15 000 руб.</p>
+              <p class="cat-example__price">
+                <span>Затраты на питание:</span>
+                <span>15 000 руб.</span>
+              </p>
             </div>
           </div>
 
+          <input class="visually-hidden changer__before" type="radio" name="catChoice" id="cat-choice-before">
+          <input class="visually-hidden changer__after" type="radio" name="catChoice" id="cat-choice-after">
+
           <div class="cat-example__slider changer">
-            <img class="changer__item changer__item--before" src="img/before-mobile@1x.png" alt="Кот Борис 2 месяца назад. Он такой большой, что не в силах поднять себя" width="311" height="232">
-            <img class="changer__item changer__item--after" src="img/after-mobile@1x.png" alt="Кот Борис, который сбросил 5 кг за 2 месяца" width="251" height="240">
+            <div class="changer__container">
+              <img class="changer__item changer__item--before" src="img/before-desktop@1x.png" alt="Кот Борис 2 месяца назад. Он такой большой, что не в силах поднять себя" width="320" height="240">
+              <img class="changer__item changer__item--after" src="img/after-desktop@1x.png" alt="Кот Борис, который сбросил 5 кг за 2 месяца" width="320" height="240">
+            </div>
 
             <div class="changer__actions">
-              <button class="changer__control changer__control--before">Было</button>
+              <label class="changer__control changer__control--before" for="cat-choice-before">Было</label>
 
-              <label class="changer__line">
-                <input class="visually-hidden" type="checkbox" name="catChanger">
-                <span class="changer__switch"></span>
-                <span class="visually-hidden">Выбери кота</span>
+              <div class="changer__line" for="cat-changer">
+                <button class="changer__switch">
+                  <span class="visually-hidden">Выбери кота</span>
+                </button>
+              </div>
+
+              <label class="changer__control changer__control--after" for="cat-choice-after">
+                <span>Стало</span>
               </label>
-
-              <button class="changer__control changer__control--after">Стало</button>
             </div>
           </div>
         </div>
@@ -128,8 +142,8 @@
 
         <div class="contacts__wrapper container">
           <div class="contacts__container">
-            <p class="contacts__tagline">Приглашаем к сотрудничеству дилеров!</p>
-            <address class="contacts__address text-paragraph">
+            <p class="contacts__tagline">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+            <address class="contacts__address">
               <span>ул. Большая Конюшенная, д. 19/8</span>
               <span>Санкт-Петербург</span>
             </address>
