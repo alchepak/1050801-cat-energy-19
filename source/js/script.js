@@ -1,3 +1,6 @@
+// Picture element HTML5 shiv
+document.createElement( "picture" );
+
 let noJs = document.querySelectorAll('.no-js');
 let navToggle = document.querySelector('.page-header__toggle');
 let mainNav = document.querySelector('.main-nav');
