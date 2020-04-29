@@ -11,7 +11,11 @@
     <header class="page-header page-header--index">
       <div class="page-header__container container">
         <a class="page-header__logo no-js">
-          <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Логотип интернет-магазина" width="33" height="38">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Логотип интернет-магазина" width="33" height="38">
+          </picture>
           <img class="page-header__logo-text logo-cat-energy" src="img/logo-cat-energy.svg" alt="Cat Energy" width="101" height="18">
         </a>
 
@@ -42,7 +46,13 @@
             <h2 class="promo-section__title section-title section-title--promo">Функциональное питание для котов</h2>
             <p class="promo-section__tagline">Занялся собой? Займись котом!</p>
           </header>
-          <img class="promo-section__product" src="img/index-can-mobile@1x.png" alt="Корм Cat Energy Pro со вкусом курицы" width="280" height="270">
+
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+            <img class="promo-section__product" src="img/index-can-mobile@1x.png" alt="Корм Cat Energy Pro со вкусом курицы" width="280" height="270">
+          </picture>
+
           <a class="button button--promo button--big " href="form.html">Подобрать программу</a>
         </div>
       </section>
