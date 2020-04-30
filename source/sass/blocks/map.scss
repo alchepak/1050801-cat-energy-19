@@ -8,6 +8,11 @@
   background-image: url("../img/bg-map-mobile@1x.png");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 320px 362px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+  }
 }
 
 .map__frame {
@@ -18,11 +23,25 @@
 @media (min-width: $tablet-width) {
   .map {
     height: 396px;
+
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-size: 767px 400px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .map {
     height: 399px;
+
+    background-image: url("../img/bg-map-desktop@1x.png");
+    background-size: 1440px 400px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+    }
   }
 }
