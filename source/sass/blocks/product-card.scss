@@ -75,16 +75,17 @@
   .product-card {
     &--big {
       min-height: 431px;
-      padding-top: 109px;
+      padding-top: 106px;
       padding-right: 38px;
       padding-bottom: 40px;
       padding-left: 38px;
 
-      background-image: linear-gradient(#ffffff 0, #ffffff 109px, $grey-back 109px, $grey-back 100%);
+      background-image: linear-gradient(#ffffff 0, #ffffff 106px, $grey-back 106px, $grey-back 100%);
     }
   }
 
   .product-card__image-link img {
+    display: block;
     width: 324px;
     height: auto;
     margin-right: auto;
@@ -172,6 +173,10 @@
     &--big {
       width: 245px;
     }
+  }
+
+  .product-card__image-link img {
+    width: 245px;
   }
 
   .product-card--big .product-card__link {

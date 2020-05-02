@@ -16,10 +16,8 @@
   padding-right: 14px;
   padding-left: 14px;
 
-  &:hover path,
-  &:hover circle,
-  &:focus path,
-  &:focus circle {
+  &:hover svg,
+  &:focus svg {
     fill: $green;
   }
 
@@ -27,8 +25,7 @@
     opacity: 0.3;
   }
 
-  &:active path,
-  &:active circle {
+  &:active svg {
     fill: $green;
   }
 }
@@ -36,10 +33,7 @@
 .social-list__icon {
   margin: auto;
 
-  path,
-  circle {
-    fill: #666666;
-  }
+  fill: #666666;
 
   &--vk {
     width: 22px;
