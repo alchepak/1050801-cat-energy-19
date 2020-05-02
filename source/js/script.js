@@ -1,5 +1,5 @@
-// Picture element HTML5 shiv
 document.createElement( "picture" );
+svg4everybody();
 
 let noJs = document.querySelectorAll('.no-js');
 let navToggle = document.querySelector('.page-header__toggle');
