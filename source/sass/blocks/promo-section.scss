@@ -4,7 +4,7 @@
     linear-gradient(to right, #65a93c 0, #65a93c 50%, #63a73a 50%, #63a73a 100%);
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: 320px 305px, auto 305px;
+  background-size: 320px 305px, 100% 305px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image:
@@ -21,6 +21,10 @@
   text-align: center;
 }
 
+.promo-section__header {
+  min-height: 139px;
+}
+
 .promo-section__title {
   margin: 0;
 }
@@ -35,10 +39,11 @@
 
 .promo-section__product {
   display: block;
-  align-self: center;
   width: 280px;
   height: 270px;
+  margin-right: auto;
   margin-bottom: 4px;
+  margin-left: auto;
 }
 
 @media (min-width: $tablet-width) {

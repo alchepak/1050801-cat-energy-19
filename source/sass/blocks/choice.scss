@@ -7,28 +7,35 @@
   cursor: pointer;
 }
 
-.choice--radio input {
-  &:checked ~ .choice__label {
-    background: $green;
-    background-clip: content-box;
-  }
-}
-
-.choice--radio .choice__label {
+.choice__label {
   position: absolute;
   top: 0;
   left: 0;
 
   width: 30px;
   height: 30px;
-  padding: 8px;
 
   border: 1px solid #cdcdcd;
-  border-radius: 50%;
 }
 
-.choice--checkbox input {
-  &:checked ~ .choice__label {
+.choice__radio {
+  & + .choice__label {
+    padding: 8px;
+    border-radius: 50%;
+  }
+
+  &:checked + .choice__label {
+    background: $green;
+    background-clip: content-box;
+  }
+}
+
+.choice__checkbox {
+  & + .choice__label {
+    display: flex;
+  }
+
+  &:checked + .choice__label {
     background-image: url("../img/icon-tick.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -36,16 +43,13 @@
   }
 }
 
-.choice--checkbox .choice__label {
-  position: absolute;
-  top: 0;
-  left: 0;
+.choice:hover .choice__label,
+.choice__radio:focus + .choice__label {
+  border-color: #bababa;
+}
 
-  display: flex;
-  width: 30px;
-  height: 30px;
-
-  border: 1px solid #cdcdcd;
+.choice:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -54,15 +58,16 @@
     padding-left: 59px;
   }
 
-  .choice--radio .choice__label {
+  .choice__label {
     width: 40px;
     height: 40px;
+  }
+
+  .choice__radio + .choice__label {
     padding: 10px;
   }
 
-  .choice--checkbox .choice__label {
-    width: 40px;
-    height: 40px;
+  .choice__checkbox + .choice__label {
     padding: 8px;
   }
 }
