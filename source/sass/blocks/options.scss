@@ -1,7 +1,8 @@
 .options {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .options__container {
@@ -43,6 +44,7 @@
 @media (min-width: $tablet-width) {
   .options {
     width: 384px;
+    margin: 0;
   }
 
   .options__container {
@@ -65,6 +67,10 @@
     line-height: 14px;
 
     background-color: #ffffff;
+  }
+
+  .options__value br {
+    display: none;
   }
 }
 

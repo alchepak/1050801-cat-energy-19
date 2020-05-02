@@ -12,7 +12,10 @@
 .changer__actions {
   display: flex;
   align-items: center;
+  max-width: 425px;
   margin-top: 29px;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: 58px;
   padding-left: 64px;
 }
@@ -100,6 +103,7 @@
   }
 
   .changer__actions {
+    max-width: none;
     margin-top: 13px;
     padding-right: 70px;
     padding-left: 68px;

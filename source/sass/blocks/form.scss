@@ -71,6 +71,7 @@
   &:focus {
     border-color: $font-color-text;
     box-shadow: inset 0 0 0 1px $font-color-text;
+    outline: none;
   }
 }
 
@@ -78,6 +79,7 @@
   &:required:invalid {
     border-color: $invalid-color;
     box-shadow: inset 0 0 0 1px $invalid-color;
+    outline: none;
   }
 
   &:required:invalid + .form__icon {
