@@ -1,13 +1,52 @@
+.form__input-container {
+  position: relative;
+  width: 100%;
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+
+  &--email {
+    right: 16px;
+
+    width: 17px;
+    height: 13px;
+    margin-top: -7px;
+  }
+
+  &--tel {
+    right: 13px;
+
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+  }
+}
+
 .form__input {
-  padding-top: 12px;
+  min-height: 45px;
   padding-right: 15px;
-  padding-bottom: 13px;
   padding-left: 15px;
 
   @include font(16px, 18px, $oswald);
   text-transform: uppercase;
 
   border: 1px solid rgba(205, 205, 205, 0.5);
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: $font-color-text;
+    box-shadow: inset 0 0 0 1px $font-color-text;
+    outline: none;
+  }
+
+  &:focus + .form__icon {
+    fill: $green;
+  }
 
   &[type="email"],
   &[type="tel"] {
@@ -24,12 +63,44 @@
 
   border: 1px solid rgba(205, 205, 205, 0.5);
   resize: none;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: $font-color-text;
+    box-shadow: inset 0 0 0 1px $font-color-text;
+  }
+}
+
+.form__invalid {
+  &:required:invalid {
+    border-color: $invalid-color;
+    box-shadow: inset 0 0 0 1px $invalid-color;
+  }
+
+  &:required:invalid + .form__icon {
+    fill: $invalid-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .form__icon {
+    &--email {
+      right: 19px;
+      margin-top: -6px;
+    }
+
+    &--tel {
+      right: 16px;
+      margin-top: -9px;
+    }
+  }
+
   .form__input {
-    padding-top: 9px;
-    padding-bottom: 11px;
+    min-height: 52px;
+    padding-right: 17px;
     padding-left: 17px;
 
     font-size: 20px;
@@ -37,6 +108,7 @@
 
     &[type="email"],
     &[type="tel"] {
+      padding-right: 56px;
       padding-left: 20px;
     }
   }
