@@ -30,8 +30,8 @@
 
   @include font(16px, 16px);
 
-  &:hover path,
-  &:focus path {
+  &:hover svg,
+  &:focus svg {
     fill: $green;
   }
 
@@ -44,9 +44,7 @@
   min-width: 27px;
   height: 34px;
 
-  path {
-    fill: #666666;
-  }
+  fill: #666666;
 }
 
 @media (min-width: $tablet-width) {
