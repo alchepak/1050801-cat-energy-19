@@ -70,6 +70,9 @@ gulp.task("webp", function () {
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/**/icon-*.svg")
+    .pipe(imagemin([
+      imagemin.svgo()
+    ]))
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -121,7 +124,7 @@ gulp.task("server", function () {
 
 /* Обновление live-сервера */
 
-gulp.task("refresh", function () {
+gulp.task("refresh", function (done) {
   server.reload();
   done();
 });
