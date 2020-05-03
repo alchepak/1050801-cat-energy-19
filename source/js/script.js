@@ -24,12 +24,14 @@ navToggle.addEventListener("click", function() {
 /* Обработка некорректно заполненных полей в форме */
 
 let form = document.querySelector(".form");
-let required = form.querySelectorAll(":required");
-let submitButton = form.querySelector("[type='submit']")
 
-submitButton.addEventListener("click", function() {
-  let invalid  = form.querySelectorAll(":required:invalid");
-  for (let i = 0; i < invalid.length; i++) {
-    invalid[i].classList.add("form__invalid");
-  }
-});
+if (form) {
+  let submitButton = form.querySelector("[type='submit']")
+
+  submitButton.addEventListener("click", function() {
+    let invalid  = form.querySelectorAll(":required:invalid");
+    for (let i = 0; i < invalid.length; i++) {
+      invalid[i].classList.add("form__invalid");
+    }
+  });
+}
