@@ -48,7 +48,7 @@
     width: 35px;
     height: 49px;
 
-    background-image: url("../img/icon-cat-slim.svg");
+    background-image: url("../img/cat-slim.svg");
   }
 }
 
@@ -60,7 +60,7 @@
     width: 67px;
     height: 28px;
 
-    background-image: url("../img/icon-cat-pro.svg");
+    background-image: url("../img/cat-pro.svg");
   }
 }
 
@@ -90,7 +90,7 @@
     width: 24px;
     height: 11px;
 
-    background-image: url("../img/icon-right-arrow-long.svg");
+    background-image: url("../img/right-arrow-long.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -98,7 +98,7 @@
   &:hover::after {
     right: -8px;
     width: 33px;
-    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/right-arrow-verylong.svg");
   }
 
   &:active {
