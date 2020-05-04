@@ -3,6 +3,53 @@
 document.createElement("picture");
 svg4everybody();
 
+/* Функции для карты */
+
+const desktop_width = 1300;
+
+let markerCoords = {
+  lat: 59.938862,
+  lng: 30.323047
+}
+
+function getMapCoords() {
+  let mapLat = 59.939160;
+  let mapLng = 30.319400;
+
+  if (document.body.clientWidth < desktop_width) {
+    mapLng = 30.323047;
+  }
+
+  return {
+    lat: mapLat,
+    lng: mapLng
+  }
+}
+
+function initMap() {
+  let mapBlock = document.getElementById('map');
+  let destination = getMapCoords();
+
+  let options = {
+    center: destination,
+    mapTypeControl: false,
+    streetViewControl: false,
+    scrollwheel: false,
+    zoom: 17
+  }
+
+  let map = new google.maps.Map(mapBlock, options);
+  let marker = new google.maps.Marker({
+    icon: "../img/map-pin.png",
+    position: markerCoords,
+    map: map
+  });
+
+  google.maps.event.addDomListener(window, "resize", function() {
+    map.setCenter(getMapCoords());
+  });
+}
+
 /* Отключение режима 'Без Javascript' */
 
 let noJs = document.querySelectorAll(".no-js");
