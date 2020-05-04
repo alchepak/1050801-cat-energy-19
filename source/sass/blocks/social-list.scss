@@ -5,8 +5,8 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid $grey-light;
+  border-bottom: 1px solid $grey-light;
 }
 
 .social-list__link {
@@ -33,7 +33,7 @@
 .social-list__icon {
   margin: auto;
 
-  fill: #666666;
+  fill: $font-color-footer;
 
   &--vk {
     width: 22px;

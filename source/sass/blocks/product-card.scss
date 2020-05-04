@@ -80,7 +80,7 @@
       padding-bottom: 40px;
       padding-left: 38px;
 
-      background-image: linear-gradient(#ffffff 0, #ffffff 106px, $grey-back 106px, $grey-back 100%);
+      background-image: linear-gradient($white 0, $white 106px, $grey-back 106px, $grey-back 100%);
     }
   }
 
@@ -144,7 +144,7 @@
     padding-top: 8px;
     padding-bottom: 7px;
 
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $grey-soft;
   }
 
   .product-card--small .product-card__info {

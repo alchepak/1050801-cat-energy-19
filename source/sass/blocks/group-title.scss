@@ -6,7 +6,7 @@
   @include font(24px, 24px, $oswald, $font-color-head);
   font-weight: normal;
 
-  background-color: #ffffff;
+  background-color: $white;
 
   &::before {
     content: "";

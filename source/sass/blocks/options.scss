@@ -24,7 +24,7 @@
   @include font(24px, 24px, $oswald, $font-color-head);
   text-transform: uppercase;
 
-  border: 1px solid #cdcdcd;
+  border: 1px solid $grey-soft;
   border-radius: 3px;
 }
 
@@ -66,7 +66,7 @@
     font-size: 14px;
     line-height: 14px;
 
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   .options__value br {

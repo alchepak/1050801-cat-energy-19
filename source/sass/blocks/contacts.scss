@@ -2,7 +2,7 @@
   position: relative;
 
   &--main {
-    background-color: #ffffff;
+    background-color: $white;
   }
 }
 
@@ -25,7 +25,6 @@
   width: 140px;
 
   @include font(14px, 20px);
-  color: #444444;
   font-style: normal;
 }
 
@@ -74,7 +73,7 @@
     padding-right: 84px;
     padding-left: 76px;
 
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   .contacts__address {
