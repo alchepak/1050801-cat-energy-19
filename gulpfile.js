@@ -16,6 +16,7 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
+var concat = require('gulp-concat');
 var uglify = require("gulp-uglify");
 var server = require("browser-sync").create();
 
@@ -99,9 +100,9 @@ gulp.task("css", function () {
 /* Сборка js */
 
 gulp.task("js", function () {
-  return gulp.src("source/js/script.js")
+  return gulp.src("source/js/**/*.js")
+    .pipe(concat("script.min.js"))
     .pipe(uglify())
-    .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"));
 });
 

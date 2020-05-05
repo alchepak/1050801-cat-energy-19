@@ -9,6 +9,7 @@
     "browser-sync": "2.26.x",
     "del": "5.1.x",
     "gulp": "4.0.x",
+    "gulp-concat": "2.6.x",
     "gulp-csso": "4.0.x",
     "gulp-htmlmin": "5.0.x",
     "gulp-imagemin": "7.1.x",
