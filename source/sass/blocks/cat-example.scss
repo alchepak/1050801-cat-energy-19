@@ -44,6 +44,7 @@
 
   .cat-example__data {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
   }
@@ -87,7 +88,13 @@
 
   .cat-example__container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .cat-example__card {
+    padding-bottom: 69px;
   }
 
   .cat-example__info {
@@ -97,23 +104,31 @@
   }
 
   .cat-example__data {
-    display: block;
+    flex-direction: column;
   }
 
   .cat-example__price {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 328px;
     margin-top: 50px;
+
+    text-align: left;
+  }
+
+  .cat-example__price-title {
+    width: 200px;
+    margin-right: 38px;
   }
 
   .cat-example__slider {
     width: 690px;
     margin-top: -55px;
 
-    background-image: linear-gradient(to right, #f2f2f2 0, #f2f2f2 405px, #ebebeb 405px, #ebebeb 100%);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 100% 462px;
+    &::before {
+      height: calc(100% - 200px);
+      background-image: linear-gradient(to right, $grey-back 0, $grey-back calc(50% + 325px), $grey-back-darken  calc(50% + 325px), $grey-back-darken 100%);
+    }
   }
 }

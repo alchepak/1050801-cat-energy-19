@@ -36,6 +36,7 @@
 
   .program-form__submit {
     flex-direction: row;
+    align-items: flex-start;
     margin-left: -1px;
   }
 
@@ -44,6 +45,7 @@
   }
 
   .program-form__note {
+    width: calc(50% - #{$tablet-indent * 2});
     margin-top: 17px;
     margin-left: $tablet-indent * 2;
 
@@ -64,6 +66,7 @@
   }
 
   .program-form__note {
+    width: calc(50% - #{$desktop-indent * 2});
     margin-left: $desktop-indent * 2;
   }
 }

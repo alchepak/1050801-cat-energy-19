@@ -23,7 +23,7 @@
 .changer__control {
   display: flex;
   align-items: center;
-  height: 26px;
+  min-height: 26px;
   padding: 0;
 
   @include font(16px, 20px, $oswald, $font-color-head);
@@ -39,10 +39,13 @@
   height: 14px;
   margin-right: 18px;
   margin-left: 18px;
-  padding: 3px 5px;
+  padding-top: 3px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  padding-left: 5px;
 
-  background-color: #ffffff;
-  border: 1px solid #cdcdcd;
+  background-color: $white;
+  border: 1px solid $grey-soft;
   border-radius: 6px;
 }
 
@@ -67,15 +70,15 @@
 .changer__after {
   bottom: 0;
 
-  &:checked ~ .changer .changer__item--before {
+  &:checked ~ .changer__container .changer__item--before {
     display: none;
   }
 
-  &:checked ~ .changer .changer__item--after {
+  &:checked ~ .changer__container .changer__item--after {
     display: block;
   }
 
-  &:checked ~ .changer .changer__switch {
+  &:checked ~ .changer__actions .changer__switch {
     left: 50%;
   }
 }
@@ -83,7 +86,7 @@
 @media (min-width: $tablet-width) {
   .changer__container {
     position: relative;
-    height: 517px;
+    min-height: 517px;
   }
 
   .changer__item {
@@ -110,7 +113,7 @@
   }
 
   .changer__control {
-    height: 34px;
+    min-height: 34px;
     font-size: 20px;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
 
@@ -132,7 +135,7 @@
     padding-right: 0;
     padding-left: 0;
 
-    background-color: #dcdcdc;
+    background-color: $grey-light;
     border: none;
     border-radius: 2px;
   }
@@ -144,8 +147,8 @@
     height: 34px;
     margin-top: -17px;
 
-    background-color: #ffffff;
-    border: 1px solid #cdcdcd;
+    background-color: $white;
+    border: 1px solid $grey-soft;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 
@@ -166,35 +169,35 @@
       height: 8px;
       margin: auto;
 
-      background-color: #68b738;
+      background-color: $green;
       border-radius: 50%;
     }
   }
 
   .changer__before {
-    &:checked ~ .changer .changer__item--before {
+    &:checked ~ .changer__container .changer__item--before {
       clip: auto;
     }
 
-    &:checked ~ .changer .changer__item--after {
+    &:checked ~ .changer__container .changer__item--after {
       display: none;
     }
 
-    &:checked ~ .changer .changer__switch {
+    &:checked ~ .changer__actions .changer__switch {
       left: -50%;
     }
   }
 
   .changer__after {
-    &:checked ~ .changer .changer__item--before {
+    &:checked ~ .changer__container .changer__item--before {
       display: none;
     }
 
-    &:checked ~ .changer .changer__item--after {
+    &:checked ~ .changer__container .changer__item--after {
       clip: auto;
     }
 
-    &:checked ~ .changer .changer__switch {
+    &:checked ~ .changer__actions .changer__switch {
       left: 50%;
     }
   }

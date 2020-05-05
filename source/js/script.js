@@ -3,18 +3,65 @@
 document.createElement("picture");
 svg4everybody();
 
-/* Отключение режима 'Без Javascript' */
+/* Функции для карты */
 
-let noJs = document.querySelectorAll(".no-js");
+var desktop_width = 1300;
 
-for (let i = 0; i < noJs.length; i++) {
+var markerCoords = {
+  lat: 59.938862,
+  lng: 30.323047
+}
+
+function getMapCoords() {
+  var mapLat = 59.939160;
+  var mapLng = 30.319400;
+
+  if (document.body.clientWidth < desktop_width) {
+    mapLng = 30.323047;
+  }
+
+  return {
+    lat: mapLat,
+    lng: mapLng
+  }
+}
+
+function initMap() {
+  var mapBlock = document.getElementById("map");
+  var destination = getMapCoords();
+
+  var options = {
+    center: destination,
+    mapTypeControl: false,
+    streetViewControl: false,
+    scrollwheel: false,
+    zoom: 17
+  }
+
+  var map = new google.maps.Map(mapBlock, options);
+  var marker = new google.maps.Marker({
+    icon: "img/map-pin.png",
+    position: markerCoords,
+    map: map
+  });
+
+  google.maps.event.addDomListener(window, "resize", function() {
+    map.setCenter(getMapCoords());
+  });
+}
+
+/* Отключение режима "Без Javascript" */
+
+var noJs = document.querySelectorAll(".no-js");
+
+for (var i = 0; i < noJs.length; i++) {
   noJs[i].classList.remove("no-js");
 }
 
 /* Открытие и закрытие меню с помощью кнопки-гамбургера */
 
-let navToggle = document.querySelector(".page-header__toggle");
-let mainNav = document.querySelector(".main-nav");
+var navToggle = document.querySelector(".page-header__toggle");
+var mainNav = document.querySelector(".main-nav");
 
 navToggle.addEventListener("click", function() {
   this.classList.toggle("page-header__toggle--opened");
@@ -23,13 +70,15 @@ navToggle.addEventListener("click", function() {
 
 /* Обработка некорректно заполненных полей в форме */
 
-let form = document.querySelector(".form");
-let required = form.querySelectorAll(":required");
-let submitButton = form.querySelector("[type='submit']")
+var form = document.querySelector(".form");
 
-submitButton.addEventListener("click", function() {
-  let invalid  = form.querySelectorAll(":required:invalid");
-  for (let i = 0; i < invalid.length; i++) {
-    invalid[i].classList.add("form__invalid");
-  }
-});
+if (form) {
+  var submitButton = form.querySelector("[type='submit']")
+
+  submitButton.addEventListener("click", function() {
+    var invalid  = form.querySelectorAll(":required:invalid");
+    for (var i = 0; i < invalid.length; i++) {
+      invalid[i].classList.add("form__invalid");
+    }
+  });
+}

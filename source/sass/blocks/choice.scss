@@ -15,7 +15,7 @@
   width: 30px;
   height: 30px;
 
-  border: 1px solid #cdcdcd;
+  border: 1px solid $grey-soft;
 }
 
 .choice__radio {
@@ -31,10 +31,6 @@
 }
 
 .choice__checkbox {
-  & + .choice__label {
-    display: flex;
-  }
-
   &:checked + .choice__label {
     background-image: url("../img/tick.svg");
     background-position: center;
@@ -45,7 +41,7 @@
 
 .choice:hover .choice__label,
 .choice__radio:focus + .choice__label {
-  border-color: #bababa;
+  border-color: $grey-mid;
 }
 
 .choice:active {

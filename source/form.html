@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -16,7 +18,7 @@
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Логотип интернет-магазина" width="33" height="38">
           </picture>
-          <img class="page-header__logo-text logo-cat-energy" src="img/logo-cat-energy.svg" alt="Cat Energy" width="101" height="18">
+          <img class="page-header__logo-text" src="img/logo-cat-energy.svg" alt="Cat Energy" width="101" height="18">
         </a>
 
         <button class="page-header__toggle no-js" type="button">
@@ -90,27 +92,27 @@
         </fieldset>
 
         <fieldset class="program-form__group inputs-group inputs-group--contacts">
-          <legend class="inputs-group__title group-title">Контактные данные<br> (владельца кота)</legend>
+          <legend class="inputs-group__title group-title">Контактные данные&nbsp;<br>(владельца кота)</legend>
 
           <div class="inputs-group__container">
             <label class="inputs-group__item">
               <span class="inputs-group__label">E&#8209;mail:*</span>
-              <div class="form__input-container">
+              <span class="form__input-container">
                 <input class="inputs-group__input form__input" type="email" name="clientMail" placeholder="kuklachev@gmail.com" required>
                 <svg class="form__icon form__icon--email" width="17" height="13">
-                  <use xlink:href="img/icons.svg#icon-email"></use>
+                  <use xlink:href="img/icons.svg#icon-mail"></use>
                 </svg>
-              </div>
+              </span>
             </label>
 
             <label class="inputs-group__item">
               <span class="inputs-group__label inputs-group__label--tel">Телефон:*</span>
-              <div class="form__input-container">
+              <span class="form__input-container">
                 <input class="inputs-group__input form__input" type="tel" name="clientPhone" placeholder="8 (960) 900-60-90" required>
                 <svg class="form__icon form__icon--tel" width="20" height="20">
-                  <use xlink:href="img/icons.svg#icon-tel"></use>
+                  <use xlink:href="img/icons.svg#icon-phone"></use>
                 </svg>
-              </div>
+              </span>
             </label>
           </div>
         </fieldset>
@@ -179,13 +181,13 @@
         </div>
 
         <div class="map">
-          <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1582539542656!5m2!1sru!2sru" width="100%" height="362"></iframe>
+          <div class="map__container" id="map"></div>
         </div>
       </section>
 
       <div class="page-footer__info container">
         <a class="page-footer__logo" href="index.html">
-          <img class="logo-cat-energy" src="img/logo-cat-energy.svg" alt="Cat Energy" width="128" height="24">
+          <img src="img/logo-cat-energy.svg" alt="Cat Energy" width="128" height="24">
         </a>
 
         <ul class="page-footer__social social-list">
@@ -226,6 +228,8 @@
 
     <script src="js/picturefill.min.js"></script>
     <script src="js/svg4everybody.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR119NNouF2pSnDqn6BfpDTVaQdHKOVYQ&callback=initMap"
+    async defer></script>
   </body>
 </html>

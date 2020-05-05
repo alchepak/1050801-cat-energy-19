@@ -4,7 +4,7 @@
   display: flex;
   height: 362px;
 
-  background-color: #fdf7ef;
+  background-color: $map-bg-color;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-position: top center;
   background-repeat: no-repeat;
@@ -15,14 +15,13 @@
   }
 }
 
-.map__frame {
-  min-height: 100%;
-  border: none;
+.map__container {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .map {
-    height: 396px;
+    min-height: 396px;
 
     background-image: url("../img/bg-map-tablet@1x.png");
     background-size: 767px 400px;
@@ -35,7 +34,12 @@
 
 @media (min-width: $desktop-width) {
   .map {
-    height: 399px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    min-height: 100%;
 
     background-image: url("../img/bg-map-desktop@1x.png");
     background-size: 1440px 400px;

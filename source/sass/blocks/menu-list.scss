@@ -6,13 +6,15 @@
 
 .menu-list__item {
   text-align: center;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $grey-back-darken;
 }
 
 .menu-list__link {
   display: block;
   padding-top: 22px;
+  padding-right: $mobile-indent;
   padding-bottom: 23px;
+  padding-left: $mobile-indent;
 
   @include font(20px, 20px, $oswald, $font-color-head);
   font-weight: 500;
@@ -49,7 +51,7 @@
 
     font-size: 18px;
     font-weight: 400;
-    color: #222222;
+    color: $font-color-menu;
 
     &--active::after {
       content: "";
@@ -76,10 +78,10 @@
   }
 
   .menu-list--index .menu-list__link {
-    color: #ffffff;
+    color: $white;
 
     &--active::after {
-      background-color: #ffffff;
+      background-color: $white;
     }
   }
 }
