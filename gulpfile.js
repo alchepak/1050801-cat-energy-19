@@ -16,6 +16,7 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
+var uglify = require("gulp-uglify");
 var server = require("browser-sync").create();
 
 /* Очистка build */
@@ -29,7 +30,6 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/js/**",
     "!source/**/README"
   ], {
     base: "source"
@@ -94,6 +94,15 @@ gulp.task("css", function () {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"));
+});
+
+/* Сборка js */
+
+gulp.task("js", function () {
+  return gulp.src("source/js/script.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"));
 });
 
 /* Сборка html */

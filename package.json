@@ -24,7 +24,6 @@
     "normalize.css": "8.0.x",
     "picturefill": "3.0.x",
     "posthtml-include": "1.4.x",
-    "readable-stream": "3.6.x",
     "stylelint": "10.1.x",
     "stylelint-config-htmlacademy": "0.1.x",
     "svg4everybody": "2.1.x"

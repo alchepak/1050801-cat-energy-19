@@ -5,16 +5,16 @@ svg4everybody();
 
 /* Функции для карты */
 
-const desktop_width = 1300;
+var desktop_width = 1300;
 
-let markerCoords = {
+var markerCoords = {
   lat: 59.938862,
   lng: 30.323047
 }
 
 function getMapCoords() {
-  let mapLat = 59.939160;
-  let mapLng = 30.319400;
+  var mapLat = 59.939160;
+  var mapLng = 30.319400;
 
   if (document.body.clientWidth < desktop_width) {
     mapLng = 30.323047;
@@ -27,10 +27,10 @@ function getMapCoords() {
 }
 
 function initMap() {
-  let mapBlock = document.getElementById('map');
-  let destination = getMapCoords();
+  var mapBlock = document.getElementById('map');
+  var destination = getMapCoords();
 
-  let options = {
+  var options = {
     center: destination,
     mapTypeControl: false,
     streetViewControl: false,
@@ -38,8 +38,8 @@ function initMap() {
     zoom: 17
   }
 
-  let map = new google.maps.Map(mapBlock, options);
-  let marker = new google.maps.Marker({
+  var map = new google.maps.Map(mapBlock, options);
+  var marker = new google.maps.Marker({
     icon: "../img/map-pin.png",
     position: markerCoords,
     map: map
@@ -52,16 +52,16 @@ function initMap() {
 
 /* Отключение режима 'Без Javascript' */
 
-let noJs = document.querySelectorAll(".no-js");
+var noJs = document.querySelectorAll(".no-js");
 
-for (let i = 0; i < noJs.length; i++) {
+for (var i = 0; i < noJs.length; i++) {
   noJs[i].classList.remove("no-js");
 }
 
 /* Открытие и закрытие меню с помощью кнопки-гамбургера */
 
-let navToggle = document.querySelector(".page-header__toggle");
-let mainNav = document.querySelector(".main-nav");
+var navToggle = document.querySelector(".page-header__toggle");
+var mainNav = document.querySelector(".main-nav");
 
 navToggle.addEventListener("click", function() {
   this.classList.toggle("page-header__toggle--opened");
@@ -70,14 +70,14 @@ navToggle.addEventListener("click", function() {
 
 /* Обработка некорректно заполненных полей в форме */
 
-let form = document.querySelector(".form");
+var form = document.querySelector(".form");
 
 if (form) {
-  let submitButton = form.querySelector("[type='submit']")
+  var submitButton = form.querySelector("[type='submit']")
 
   submitButton.addEventListener("click", function() {
-    let invalid  = form.querySelectorAll(":required:invalid");
-    for (let i = 0; i < invalid.length; i++) {
+    var invalid  = form.querySelectorAll(":required:invalid");
+    for (var i = 0; i < invalid.length; i++) {
       invalid[i].classList.add("form__invalid");
     }
   });
