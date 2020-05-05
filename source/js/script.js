@@ -40,7 +40,7 @@ function initMap() {
 
   var map = new google.maps.Map(mapBlock, options);
   var marker = new google.maps.Marker({
-    icon: "../img/map-pin.png",
+    icon: "img/map-pin.png",
     position: markerCoords,
     map: map
   });
