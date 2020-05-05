@@ -119,16 +119,16 @@
               </dl>
 
               <p class="cat-example__price">
-                <span>Затраты на питание:</span>
+                <span class="cat-example__price-title">Затраты на питание:</span>
                 <span>15 000 руб.</span>
               </p>
             </div>
           </div>
 
-          <input class="visually-hidden changer__before" type="radio" name="catChoice" id="cat-choice-before">
-          <input class="visually-hidden changer__after" type="radio" name="catChoice" id="cat-choice-after">
-
           <div class="cat-example__slider changer">
+            <input class="visually-hidden changer__before" type="radio" name="catChoice" id="cat-choice-before">
+            <input class="visually-hidden changer__after" type="radio" name="catChoice" id="cat-choice-after">
+
             <div class="changer__container">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/before-desktop@1x.webp 1x, img/content/before-desktop@2x.webp 2x">
@@ -150,8 +150,6 @@
                 <source media="(min-width: 768px)" srcset="img/content/after-tablet@1x.png 1x, img/content/after-tablet@2x.png 2x">
                   <img class="changer__item changer__item--after" src="img/content/after-desktop@1x.png" srcset="img/content/after-desktop@2x.png 2x" alt="Кот Борис, который сбросил 5 кг за 2 месяца" width="320" height="240">
               </picture>
-
-
             </div>
 
             <div class="changer__actions">
@@ -187,12 +185,14 @@
           </div>
         </div>
 
-        <div class="map" id="map"></div>
+        <div class="map">
+          <div class="map__container" id="map"></div>
+        </div>
       </section>
 
       <div class="page-footer__info container">
         <a class="page-footer__logo">
-          <img class="logo-cat-energy" src="img/logo-cat-energy.svg" alt="Cat Energy" width="128" height="24">
+          <img src="img/logo-cat-energy.svg" alt="Cat Energy" width="128" height="24">
         </a>
 
         <ul class="page-footer__social social-list">

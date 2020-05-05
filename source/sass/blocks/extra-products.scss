@@ -117,6 +117,7 @@
 
   .extra-products__container {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .extra-products__title {

@@ -12,7 +12,9 @@
 .menu-list__link {
   display: block;
   padding-top: 22px;
+  padding-right: $mobile-indent;
   padding-bottom: 23px;
+  padding-left: $mobile-indent;
 
   @include font(20px, 20px, $oswald, $font-color-head);
   font-weight: 500;

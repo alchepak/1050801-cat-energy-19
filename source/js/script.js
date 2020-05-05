@@ -27,7 +27,7 @@ function getMapCoords() {
 }
 
 function initMap() {
-  var mapBlock = document.getElementById('map');
+  var mapBlock = document.getElementById("map");
   var destination = getMapCoords();
 
   var options = {
@@ -50,7 +50,7 @@ function initMap() {
   });
 }
 
-/* Отключение режима 'Без Javascript' */
+/* Отключение режима "Без Javascript" */
 
 var noJs = document.querySelectorAll(".no-js");
 

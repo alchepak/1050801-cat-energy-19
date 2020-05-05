@@ -8,6 +8,7 @@
 
 .contacts__container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 29px;
   padding-bottom: 25px;
@@ -51,7 +52,7 @@
     justify-content: space-between;
 
     width: 160px;
-    height: 79px;
+    min-height: 79px;
 
     font-size: 16px;
     text-align: right;
@@ -59,17 +60,22 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+    min-height: 400px;
+  }
+
   .contacts__wrapper {
-    position: relative;
+    display: flex;
   }
 
   .contacts__container {
-    position: absolute;
-    top: 95px;
-    left: $desktop-indent;
+    position: relative;
     z-index: 1;
 
     width: 570px;
+    margin-top: 95px;
+    margin-bottom: 104px;
     padding-right: 84px;
     padding-left: 76px;
 

@@ -31,10 +31,6 @@
 }
 
 .choice__checkbox {
-  & + .choice__label {
-    display: flex;
-  }
-
   &:checked + .choice__label {
     background-image: url("../img/tick.svg");
     background-position: center;

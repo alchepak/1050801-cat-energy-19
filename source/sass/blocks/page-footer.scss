@@ -22,6 +22,11 @@
   }
 }
 
+.page-footer__logo img {
+  width: 128px;
+  height: 24px;
+}
+
 .page-footer__developer {
   display: flex;
   justify-content: space-between;
@@ -41,6 +46,7 @@
 }
 
 .page-footer__academy-icon {
+  width: 27px;
   min-width: 27px;
   height: 34px;
 
