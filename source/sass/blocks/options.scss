@@ -14,7 +14,6 @@
 
 .options__key {
   display: flex;
-  flex-grow: 1;
   justify-content: center;
   align-items: center;
   padding-top: 13px;
@@ -22,7 +21,7 @@
   padding-bottom: 17px;
   padding-left: 20px;
 
-  @include font(24px, 24px, $oswald, $font-color-head);
+  @include font(24px, 24px, $font-color-head);
   text-transform: uppercase;
 
   border: 1px solid $grey-soft;
@@ -34,9 +33,10 @@
   width: 71%;
   margin-top: -8px;
   margin-left: 0;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-right: 10px;
+  padding-left: 10px;
 
+  font-family: $arial;
   @include font(12px, 12px);
 
   background-color: $grey-back;

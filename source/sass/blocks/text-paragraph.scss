@@ -1,4 +1,5 @@
 .text-paragraph {
+  font-family: $arial;
   @include font(14px, 18px);
 }
 

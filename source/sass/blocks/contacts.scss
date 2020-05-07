@@ -18,13 +18,14 @@
   width: 125px;
   margin: 0;
 
-  @include font(16px, 20px, $oswald, $font-color-head);
+  @include font(16px, 20px, $font-color-head);
   text-transform: uppercase;
 }
 
 .contacts__address {
   width: 140px;
 
+  font-family: $arial;
   @include font(14px, 20px);
   font-style: normal;
 }

@@ -1,5 +1,5 @@
 .section-title {
-  @include font(36px, 60px, $oswald, $font-color-head);
+  @include font(36px, 60px, $font-color-head);
   font-weight: normal;
 
   &--promo {

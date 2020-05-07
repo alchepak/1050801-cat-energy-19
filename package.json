@@ -22,10 +22,8 @@
     "gulp-uglify": "3.0.x",
     "gulp-webp": "4.0.x",
     "normalize.css": "8.0.x",
-    "picturefill": "3.0.x",
     "stylelint": "10.1.x",
-    "stylelint-config-htmlacademy": "0.1.x",
-    "svg4everybody": "2.1.x"
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -49,5 +47,9 @@
   ],
   "engines": {
     "node": "8.16"
+  },
+  "dependencies": {
+    "picturefill": "3.0.x",
+    "svg4everybody": "2.1.x"
   }
 }

@@ -35,7 +35,7 @@
   .catalog__item {
     display: flex;
     width: 50%;
-    padding-top: 0;
+    padding-top: 106px;
     padding-right: $tablet-indent;
     padding-bottom: 34px;
     padding-left: $tablet-indent;
@@ -49,10 +49,6 @@
 
   .catalog__item:last-child {
     border: none;
-  }
-
-  .catalog__item article {
-    flex-grow: 1;
   }
 }
 

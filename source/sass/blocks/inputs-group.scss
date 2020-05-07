@@ -60,7 +60,7 @@
   display: flex;
   align-items: center;
 
-  @include font(16px, 18px, $oswald, $font-color-head);
+  @include font(16px, 18px, $font-color-head);
   text-transform: uppercase;
 }
 

@@ -33,6 +33,7 @@
   align-items: center;
   margin-top: 22px;
 
+  font-family: $arial;
   @include font(16px, 16px);
 
   &:hover svg,
