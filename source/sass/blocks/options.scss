@@ -36,8 +36,8 @@
   padding-right: 10px;
   padding-left: 10px;
 
-  font-family: $arial;
   @include font(12px, 12px);
+  font-family: $arial;
 
   background-color: $grey-back;
 }

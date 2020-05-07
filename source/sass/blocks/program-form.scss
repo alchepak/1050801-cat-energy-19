@@ -17,8 +17,8 @@
   margin-top: 21px;
   margin-bottom: 0;
 
-  font-family: $arial;
   @include font(14px, 16px);
+  font-family: $arial;
   text-align: center;
 }
 

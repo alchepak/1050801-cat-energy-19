@@ -1,6 +1,6 @@
 .text-paragraph {
-  font-family: $arial;
   @include font(14px, 18px);
+  font-family: $arial;
 }
 
 @media (min-width: $tablet-width) {

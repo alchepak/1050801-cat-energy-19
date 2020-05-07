@@ -25,8 +25,8 @@
 .contacts__address {
   width: 140px;
 
-  font-family: $arial;
   @include font(14px, 20px);
+  font-family: $arial;
   font-style: normal;
 }
 
