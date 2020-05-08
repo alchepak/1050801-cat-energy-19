@@ -40,7 +40,8 @@
 }
 
 .choice:hover .choice__label,
-.choice__radio:focus + .choice__label {
+.choice__radio:focus + .choice__label,
+.choice__checkbox:focus + .choice__label {
   border-color: $grey-mid;
 }
 
