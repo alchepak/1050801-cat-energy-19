@@ -107,7 +107,7 @@
       left: 115px;
       z-index: -1;
 
-      @include font(281px, 281px, $oswald, $grey-back);
+      @include font(281px, 281px, $color: $grey-back);
     }
   }
 

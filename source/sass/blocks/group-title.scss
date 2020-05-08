@@ -3,7 +3,7 @@
   padding-right: $mobile-indent;
   padding-left: $mobile-indent;
 
-  @include font(24px, 24px, $oswald, $font-color-head);
+  @include font(24px, 24px, $font-color-head);
   font-weight: normal;
 
   background-color: $white;

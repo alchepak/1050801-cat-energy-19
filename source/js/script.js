@@ -26,6 +26,10 @@ function getMapCoords() {
   }
 }
 
+function getWindowRatio() {
+  return window.devicePixelRatio > 1 ? 2 : 1;
+}
+
 function initMap() {
   var mapBlock = document.getElementById("map");
   var destination = getMapCoords();
@@ -39,8 +43,14 @@ function initMap() {
   }
 
   var map = new google.maps.Map(mapBlock, options);
+
+  var image = {
+    url: "img/map-pin@" + getWindowRatio() + "x.png",
+    scaledSize: new google.maps.Size(124, 106)
+  };
+
   var marker = new google.maps.Marker({
-    icon: "img/map-pin.png",
+    icon: image,
     position: markerCoords,
     map: map
   });

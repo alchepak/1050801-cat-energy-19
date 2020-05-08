@@ -1,7 +1,7 @@
 .category {
   padding-top: 31px;
   padding-right: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 20px;
   padding-left: 20px;
 
   background-color: $grey-back;
@@ -13,7 +13,7 @@
   margin: 0;
   margin-left: 71px;
 
-  @include font(24px, 37px, $oswald, $font-color-head);
+  @include font(24px, 37px, $font-color-head);
   font-weight: normal;
   text-transform: uppercase;
 
@@ -66,7 +66,7 @@
 
 .category__info {
   margin-top: 29px;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
   padding-bottom: 22px;
   border-bottom: 1px solid $grey-light;
 }
@@ -77,14 +77,14 @@
   display: inline-block;
   padding-right: 37px;
 
-  @include font(16px, 16px, $oswald, $font-color-head);
+  @include font(16px, 16px, $font-color-head);
   text-transform: uppercase;
 
   &::after {
     content: "";
 
     position: absolute;
-    top: 3px;
+    top: 2px;
     right: 0;
 
     width: 24px;

@@ -21,7 +21,7 @@
   margin-top: 18px;
   margin-bottom: 34px;
 
-  @include font(14px, 20px, $oswald, $font-color-head);
+  @include font(14px, 20px, $color: $font-color-head);
   text-transform: uppercase;
 }
 

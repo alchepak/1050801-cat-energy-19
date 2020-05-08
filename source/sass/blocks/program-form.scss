@@ -18,6 +18,7 @@
   margin-bottom: 0;
 
   @include font(14px, 16px);
+  font-family: $arial;
   text-align: center;
 }
 

@@ -35,6 +35,7 @@
   padding-left: 50px;
 
   @include font(16px, 20px, $color: $white);
+  font-family: $arial;
   text-align: center;
 
   background-color: $green;

@@ -11,7 +11,7 @@
   width: 240px;
   margin: 0;
 
-  @include font(14px, 18px, $oswald, $font-color-head);
+  @include font(14px, 18px, $font-color-head);
   text-transform: uppercase;
 }
 

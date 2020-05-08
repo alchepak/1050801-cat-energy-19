@@ -18,7 +18,7 @@
   width: 125px;
   margin: 0;
 
-  @include font(16px, 20px, $oswald, $font-color-head);
+  @include font(16px, 20px, $font-color-head);
   text-transform: uppercase;
 }
 
@@ -26,6 +26,7 @@
   width: 140px;
 
   @include font(14px, 20px);
+  font-family: $arial;
   font-style: normal;
 }
 
